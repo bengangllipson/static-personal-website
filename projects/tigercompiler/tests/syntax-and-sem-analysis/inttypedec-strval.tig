@@ -1,0 +1,6 @@
+let
+  type a = int
+  var x: a := "test"
+in
+  x
+end

@@ -1,0 +1,46 @@
+let 
+    function printint(i: int) =
+        let 
+            function f(i:int) = 
+                if i>0 
+                    then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+        in 
+            if i<0 then (print("-"); f(-i))
+            else if i>0 then f(i)
+            else print("0")
+        end
+in
+    let
+    	var v1 := 1
+    	function dummy1():int = 
+    	(
+    		let 
+    	        var v2 := 100
+    			function dummy2():int = 
+    			(
+    				let
+    					var v3 := 3
+    					function dummy3():int = 
+    					(
+    						let
+    							var v4 := 4
+    							function dummy4():int = 
+    							(
+    								v1
+    							)
+    						in
+    							v3 +dummy4()
+    						end
+    					)
+    				in
+    					v2 + dummy3()
+    				end
+    			)
+    		in
+    			dummy2()
+    		end
+    	)
+    in
+        printint(dummy1() + v1)
+    end
+end

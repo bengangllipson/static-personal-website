@@ -1,0 +1,12 @@
+let function f(x1:int,x2:int,x3:int,x4:int,x5:int,x6:int):int =
+             x1+x3
+             function printint(i: int) =
+      let function f(i:int) = if i>0 
+    	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))
+       in if i<0 then (print("-"); f(-i))
+          else if i>0 then f(i)
+          else print("0")
+      end
+in 
+	printint(f(1,2,3,4,5,6))
+end

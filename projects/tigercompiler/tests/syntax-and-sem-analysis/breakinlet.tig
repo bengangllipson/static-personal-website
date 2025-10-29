@@ -1,0 +1,8 @@
+/* error : break in let */
+let
+	var x := 5
+in
+	break;
+	x
+end
+

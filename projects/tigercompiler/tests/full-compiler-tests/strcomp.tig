@@ -1,0 +1,10 @@
+(
+	if "this" = "this" then print("equal\n") else print("not equal\n");
+	if "this" = "that" then print("equal\n") else print("not equal\n");
+	if "this" < "that" then print("less\n") else print ("greater or equal\n");
+	if "that" < "this" then print("less\n") else print("greater or equal\n");
+	if "this" > "that" then print("greater\n") else print ("less or equal\n");
+	if "that" > "this" then print("greater\n") else print("less or equal\n");
+	if "this" <= "this" then print("less or equal\n") else print("greater\n");
+	if "this" >= "that" then print("greater or equal\n") else print("less\n")
+)

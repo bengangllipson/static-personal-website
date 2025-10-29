@@ -1,0 +1,7 @@
+let
+  type nametype = string
+  var rec1: nametype := "Nobody"
+in
+  rec1.name := "Somebody";
+  rec1
+end

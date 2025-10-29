@@ -1,0 +1,12 @@
+let
+  type a = array of int
+  var arr1 := a [10] of 0
+  var arr2 := a [10] of 0
+in
+  arr1 = arr2
+end
+
+
+/* todo:
+same with <> < > <= >=
+*/

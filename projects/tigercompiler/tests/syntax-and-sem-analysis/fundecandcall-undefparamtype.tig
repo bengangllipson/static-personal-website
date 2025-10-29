@@ -1,0 +1,5 @@
+let
+  function test(n: notatype, x: int): int = n + x
+in
+  test(10)
+end

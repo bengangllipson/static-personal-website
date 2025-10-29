@@ -1,0 +1,8 @@
+let
+    /* define a list */
+    type intlist = {hd: int, tl: intlist} 
+    var lis:intlist := nil
+in
+    /* Attempt to dereference a null record */
+    lis.hd
+end

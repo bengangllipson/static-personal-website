@@ -1,0 +1,8 @@
+let
+	var a := 12
+	var b := 19
+	var result := if (10 > 20) then "10 > 20\n" else "10 <= 20\n"
+in
+	print(result);
+	if (a < b) then print("a < b\n") else print("a >= b\n")
+end

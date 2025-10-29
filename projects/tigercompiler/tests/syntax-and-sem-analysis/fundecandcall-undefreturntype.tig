@@ -1,0 +1,5 @@
+let
+  function test(n: int): awfe = n
+in
+  test(10)
+end

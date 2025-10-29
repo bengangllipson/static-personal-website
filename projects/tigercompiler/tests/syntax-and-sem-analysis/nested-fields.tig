@@ -1,0 +1,24 @@
+let
+  type rectype1 = {name: string}
+  type arrtype1 = array of rectype1
+  type rectype2 = {testarr: arrtype1}
+  type rectype3 = {test: rectype2}
+  type arrtype2 = array of rectype3
+
+  var arr :=
+    arrtype2 [10]
+    of
+    rectype3 {
+      test = rectype2 {
+               testarr = arrtype1 [5]
+                         of
+                         rectype1 {
+                           name = "test"
+                         }
+             }
+    }
+
+in
+  arr[0].test.testarr[1].name := "new";
+  arr[0].test.testarr[1].name
+end

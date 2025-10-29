@@ -1,0 +1,5 @@
+let
+  var sum := 1
+in
+  sum(3, 5)
+end

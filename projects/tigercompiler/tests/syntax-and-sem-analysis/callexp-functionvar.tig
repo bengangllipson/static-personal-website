@@ -1,0 +1,6 @@
+let
+  function sumtest(x: int, y: int): int = x + y
+  var two := sumtest
+in
+  two(3, 5)
+end

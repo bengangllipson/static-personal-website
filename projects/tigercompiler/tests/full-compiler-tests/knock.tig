@@ -1,0 +1,27 @@
+let
+	type counter = int
+	var c : counter := 0
+
+	function knockKnock() =
+	(
+		if c = 0 then
+			print("Knock knock.\n")
+		else if c = 1 then
+			print("Who's there?\n")
+		else if c = 2 then 
+			print("Little old lady.\n")
+		else if c = 3 then
+			print("Little old lady who?\n")
+		else
+			print("I didn't know you could yodel!\n");
+		c := c + 1;
+		if c > 4 then c := 0
+	)
+
+in
+	knockKnock();
+	knockKnock();
+	knockKnock();
+	knockKnock();
+	knockKnock()
+end

@@ -1,0 +1,8 @@
+let
+  type a = array of int
+  var arr1 := a [10] of 0
+  type rectype = {name:string , id:int}
+  var rec1: rectype := rectype {name="Name", id=1}
+in
+  rec1 = arr1
+end

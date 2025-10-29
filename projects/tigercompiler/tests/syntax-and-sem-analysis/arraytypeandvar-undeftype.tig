@@ -1,0 +1,8 @@
+let
+    type a = array of int
+    type b = a
+    var arr1 := bats [1] of 1
+  in
+    arr1
+  end
+  

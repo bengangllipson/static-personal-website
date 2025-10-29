@@ -1,0 +1,2 @@
+/* break in while loop */
+while 10 > 5 do (break;())

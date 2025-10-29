@@ -1,0 +1,10 @@
+let
+	var x := 5
+  in
+	let
+	  var y := 6
+	in
+	  x + y
+	end;
+	x
+  end

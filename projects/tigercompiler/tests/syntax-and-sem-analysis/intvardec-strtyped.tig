@@ -1,0 +1,33 @@
+let
+  var x: string := 1
+in
+  x
+end
+
+/*
+todo:
+- inttypedec-arrayval.tig
+- inttypedec-recordval.tig
+- inttypedec-invalid.tig
+- strtypedec-arrayval.tig
+- strtypedec-recordval.tig
+- strtypedec-invalid.tig
+
+- recordtypedec-invalid.tig
+- arraytypedec.tig
+
+- intvardec-recordtyped.tig
+- intvardec-arraytyped.tig
+- strvardec-recordtyped.tig
+- strvardec-arraytyped.tig
+- arrayvardec-typed.tig
+- arrayvardec-inttyped.tig
+- arrayvardec-strtyped.tig
+- arrayvardec-recordtyped.tig
+- recordvardec-typed.tig
+- recordvardec-inttyped.tig
+- recordvardec-strtyped.tig
+- recordvardec-arraytyped.tig
+
+- nestedlets.tig
+*/

@@ -1,0 +1,6 @@
+let
+  type a = intt
+  var x: a := 1
+in
+  x
+end

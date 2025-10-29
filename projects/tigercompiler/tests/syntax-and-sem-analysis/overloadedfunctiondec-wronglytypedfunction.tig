@@ -1,0 +1,7 @@
+let
+    function g(a:int):int = a
+    function g(a:string):int = a
+    var x := "test"
+in
+    g(x)
+end

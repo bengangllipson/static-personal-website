@@ -1,0 +1,8 @@
+let
+  type a = array of int
+  type s = array of string
+  var arr1 := a [10] of 0
+  var arr2 := s [10] of ""
+in
+  arr1 = arr2
+end

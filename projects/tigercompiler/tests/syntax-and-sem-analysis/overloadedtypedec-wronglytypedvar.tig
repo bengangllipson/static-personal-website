@@ -1,0 +1,7 @@
+let
+  type a = int
+  type a = string
+  var x: a := 5
+in 
+  x
+end
