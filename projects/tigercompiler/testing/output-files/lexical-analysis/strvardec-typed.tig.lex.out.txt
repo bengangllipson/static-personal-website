@@ -1,0 +1,11 @@
+LET   2
+VAR   8
+ID(x)     12
+COLON   13
+ID(string)     15
+ASSIGN   22
+STRING(test)     25
+IN   32
+ID(x)     37
+END   39
+EOF   42

@@ -1,0 +1,4 @@
+STRING(18)     2
+MINUS   7
+STRING(22)     9
+EOF   13

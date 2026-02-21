@@ -1,0 +1,9 @@
+FOR   2
+ID(i)     6
+ASSIGN   7
+STRING( )     9
+TO   13
+STRING( )     16
+DO   20
+INT(3)   23
+EOF   24

@@ -1,0 +1,11 @@
+LET   2
+VAR   8
+ID(x)     12
+COLON   13
+ID(asfdsadf)     15
+ASSIGN   24
+INT(1)   27
+IN   29
+ID(x)     34
+END   36
+EOF   39

@@ -1,0 +1,4 @@
+LET   56
+TYPE   62
+ID(arrayty)     67
+EOF   74

@@ -1,0 +1,4 @@
+STRING(5)     2
+PLUS   6
+STRING(4)     8
+EOF   11

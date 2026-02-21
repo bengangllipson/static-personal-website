@@ -1,0 +1,4 @@
+STRING(18)     2
+MINUS   7
+INT(22)   9
+EOF   11

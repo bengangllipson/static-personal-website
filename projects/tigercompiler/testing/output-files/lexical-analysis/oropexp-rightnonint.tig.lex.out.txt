@@ -1,0 +1,4 @@
+INT(3223)   2
+OR   7
+STRING(test)     9
+EOF   15

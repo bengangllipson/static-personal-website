@@ -1,0 +1,10 @@
+LET   2
+VAR   8
+ID(x)     12
+ASSIGN   14
+LPAREN   17
+RPAREN   18
+IN   20
+ID(x)     25
+END   27
+EOF   30

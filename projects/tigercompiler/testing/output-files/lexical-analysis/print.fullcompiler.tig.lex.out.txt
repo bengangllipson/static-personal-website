@@ -1,0 +1,6 @@
+ID(print)     2
+LPAREN   7
+STRING(test
+)     8
+RPAREN   16
+EOF   18

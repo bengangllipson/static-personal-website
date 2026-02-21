@@ -1,0 +1,6 @@
+LET   2
+VAR   8
+ID(a)     12
+ASSIGN   14
+STRING()     17
+EOF   22

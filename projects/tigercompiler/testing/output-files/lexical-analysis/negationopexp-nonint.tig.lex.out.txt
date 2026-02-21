@@ -1,0 +1,3 @@
+MINUS   2
+STRING(test)     3
+EOF   9

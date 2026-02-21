@@ -1,0 +1,4 @@
+INT(18)   2
+MINUS   5
+INT(22)   7
+EOF   9

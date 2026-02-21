@@ -1,0 +1,5 @@
+STRING(test)     2
+EQ   9
+LPAREN   11
+RPAREN   12
+EOF   13

@@ -1,0 +1,12 @@
+LET   2
+VAR   41
+ID(a)     45
+ASSIGN   47
+STRING(test)     50
+IN   57
+ID(print)     61
+LPAREN   67
+ID(a)     68
+RPAREN   69
+END   71
+EOF   74

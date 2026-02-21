@@ -1,0 +1,4 @@
+INT(5)   2
+EQ   4
+STRING(test)     6
+EOF   12

@@ -1,0 +1,6 @@
+let
+/* This is a test
+	comment ******/ var a := "test"
+in
+	print (a)
+end

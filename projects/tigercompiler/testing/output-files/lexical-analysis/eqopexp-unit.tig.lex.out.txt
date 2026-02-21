@@ -1,0 +1,6 @@
+LPAREN   2
+RPAREN   3
+EQ   5
+LPAREN   7
+RPAREN   8
+EOF   9

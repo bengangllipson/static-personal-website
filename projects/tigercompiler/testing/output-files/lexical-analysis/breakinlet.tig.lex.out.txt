@@ -1,0 +1,11 @@
+LET   29
+VAR   34
+ID(x)     38
+ASSIGN   40
+INT(5)   43
+IN   45
+BREAK   49
+SEMICOLON   54
+ID(x)     57
+END   59
+EOF   63

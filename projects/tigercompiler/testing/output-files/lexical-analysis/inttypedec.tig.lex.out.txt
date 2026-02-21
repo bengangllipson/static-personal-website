@@ -1,0 +1,15 @@
+LET   2
+TYPE   8
+ID(a)     13
+EQ   15
+ID(int)     17
+VAR   23
+ID(x)     27
+COLON   28
+ID(a)     30
+ASSIGN   32
+INT(1)   35
+IN   37
+ID(x)     42
+END   44
+EOF   47

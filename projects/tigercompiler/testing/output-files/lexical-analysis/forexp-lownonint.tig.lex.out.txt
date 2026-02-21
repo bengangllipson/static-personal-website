@@ -1,0 +1,10 @@
+FOR   2
+ID(i)     6
+ASSIGN   7
+STRING( )     9
+TO   13
+INT(10)   16
+DO   19
+LPAREN   22
+RPAREN   23
+EOF   24

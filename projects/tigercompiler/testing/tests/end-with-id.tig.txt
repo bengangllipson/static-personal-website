@@ -1,0 +1,4 @@
+/* error : initializing exp and array type differ */
+
+let
+  type arrayty

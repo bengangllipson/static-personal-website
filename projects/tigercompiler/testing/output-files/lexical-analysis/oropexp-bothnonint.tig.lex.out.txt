@@ -1,0 +1,4 @@
+STRING(test1)     2
+OR   10
+STRING(test2)     12
+EOF   19

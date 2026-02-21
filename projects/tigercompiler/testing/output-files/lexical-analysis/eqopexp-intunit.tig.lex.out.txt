@@ -1,0 +1,5 @@
+INT(5)   2
+EQ   4
+LPAREN   6
+RPAREN   7
+EOF   8

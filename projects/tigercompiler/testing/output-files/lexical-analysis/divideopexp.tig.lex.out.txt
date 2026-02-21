@@ -1,0 +1,4 @@
+INT(100)   2
+DIVIDE   6
+INT(25)   8
+EOF   10

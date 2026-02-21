@@ -1,0 +1,5 @@
+INT(3223)   2
+OR   7
+MINUS   9
+INT(1234)   10
+EOF   14

@@ -1,0 +1,9 @@
+LET   2
+VAR   8
+ID(x)     12
+ASSIGN   14
+STRING(test)     17
+IN   24
+ID(x)     29
+END   31
+EOF   34

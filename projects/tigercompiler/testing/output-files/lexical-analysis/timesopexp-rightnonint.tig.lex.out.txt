@@ -1,0 +1,4 @@
+INT(87)   2
+TIMES   5
+STRING(23)     7
+EOF   11

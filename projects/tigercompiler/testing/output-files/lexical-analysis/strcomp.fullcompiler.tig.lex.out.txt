@@ -1,0 +1,138 @@
+LPAREN   2
+IF   5
+STRING(this)     8
+EQ   15
+STRING(this)     17
+THEN   24
+ID(print)     29
+LPAREN   34
+STRING(equal
+)     35
+RPAREN   44
+ELSE   46
+ID(print)     51
+LPAREN   56
+STRING(not equal
+)     57
+RPAREN   70
+SEMICOLON   71
+IF   74
+STRING(this)     77
+EQ   84
+STRING(that)     86
+THEN   93
+ID(print)     98
+LPAREN   103
+STRING(equal
+)     104
+RPAREN   113
+ELSE   115
+ID(print)     120
+LPAREN   125
+STRING(not equal
+)     126
+RPAREN   139
+SEMICOLON   140
+IF   143
+STRING(this)     146
+LT   153
+STRING(that)     155
+THEN   162
+ID(print)     167
+LPAREN   172
+STRING(less
+)     173
+RPAREN   181
+ELSE   183
+ID(print)     188
+LPAREN   194
+STRING(greater or equal
+)     195
+RPAREN   215
+SEMICOLON   216
+IF   219
+STRING(that)     222
+LT   229
+STRING(this)     231
+THEN   238
+ID(print)     243
+LPAREN   248
+STRING(less
+)     249
+RPAREN   257
+ELSE   259
+ID(print)     264
+LPAREN   269
+STRING(greater or equal
+)     270
+RPAREN   290
+SEMICOLON   291
+IF   294
+STRING(this)     297
+GT   304
+STRING(that)     306
+THEN   313
+ID(print)     318
+LPAREN   323
+STRING(greater
+)     324
+RPAREN   335
+ELSE   337
+ID(print)     342
+LPAREN   348
+STRING(less or equal
+)     349
+RPAREN   366
+SEMICOLON   367
+IF   370
+STRING(that)     373
+GT   380
+STRING(this)     382
+THEN   389
+ID(print)     394
+LPAREN   399
+STRING(greater
+)     400
+RPAREN   411
+ELSE   413
+ID(print)     418
+LPAREN   423
+STRING(less or equal
+)     424
+RPAREN   441
+SEMICOLON   442
+IF   445
+STRING(this)     448
+LE   455
+STRING(this)     458
+THEN   465
+ID(print)     470
+LPAREN   475
+STRING(less or equal
+)     476
+RPAREN   493
+ELSE   495
+ID(print)     500
+LPAREN   505
+STRING(greater
+)     506
+RPAREN   517
+SEMICOLON   518
+IF   521
+STRING(this)     524
+GE   531
+STRING(that)     534
+THEN   541
+ID(print)     546
+LPAREN   551
+STRING(greater or equal
+)     552
+RPAREN   572
+ELSE   574
+ID(print)     579
+LPAREN   584
+STRING(less
+)     585
+RPAREN   593
+RPAREN   595
+EOF   596

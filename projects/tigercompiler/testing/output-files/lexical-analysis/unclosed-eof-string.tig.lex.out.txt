@@ -1,0 +1,5 @@
+LET   2
+VAR   8
+ID(a)     12
+ASSIGN   14
+EOF   22

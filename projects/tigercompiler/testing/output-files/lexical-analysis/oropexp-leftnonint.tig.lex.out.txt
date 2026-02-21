@@ -1,0 +1,5 @@
+STRING(test)     2
+OR   9
+MINUS   11
+INT(1234)   12
+EOF   16

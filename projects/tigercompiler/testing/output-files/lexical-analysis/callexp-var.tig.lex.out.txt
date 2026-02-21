@@ -1,0 +1,14 @@
+LET   2
+VAR   8
+ID(sum)     12
+ASSIGN   16
+INT(1)   19
+IN   21
+ID(sum)     26
+LPAREN   29
+INT(3)   30
+COMMA   31
+INT(5)   33
+RPAREN   34
+END   36
+EOF   39

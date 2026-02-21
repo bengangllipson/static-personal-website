@@ -1,0 +1,6 @@
+let
+  var a := "test \
+invalid characters here \ multiline string."
+in
+  print (a)
+end

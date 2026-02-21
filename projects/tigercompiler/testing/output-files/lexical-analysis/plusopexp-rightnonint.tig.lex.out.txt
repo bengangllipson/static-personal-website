@@ -1,0 +1,4 @@
+INT(5)   2
+PLUS   4
+STRING(4)     6
+EOF   9

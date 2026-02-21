@@ -1,0 +1,25 @@
+LET   2
+TYPE   11
+ID(a)     16
+EQ   18
+ARRAY   20
+OF   26
+ID(int)     29
+VAR   37
+ID(arr1)     41
+COLON   45
+ID(a)     47
+ASSIGN   49
+ID(a)     52
+LBRACK   54
+INT(10)   55
+RBRACK   57
+OF   59
+INT(0)   62
+IN   64
+ID(arr1)     71
+LBRACK   75
+STRING( )     76
+RBRACK   79
+END   81
+EOF   84

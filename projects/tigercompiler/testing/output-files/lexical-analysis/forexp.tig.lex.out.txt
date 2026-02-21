@@ -1,0 +1,10 @@
+FOR   2
+ID(i)     6
+ASSIGN   7
+INT(1)   9
+TO   11
+INT(10)   14
+DO   17
+LPAREN   20
+RPAREN   21
+EOF   22

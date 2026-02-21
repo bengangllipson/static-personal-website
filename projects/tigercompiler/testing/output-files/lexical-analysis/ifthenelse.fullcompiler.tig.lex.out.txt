@@ -1,0 +1,50 @@
+LET   2
+VAR   7
+ID(a)     11
+ASSIGN   13
+INT(12)   16
+VAR   20
+ID(b)     24
+ASSIGN   26
+INT(19)   29
+VAR   33
+ID(result)     37
+ASSIGN   44
+IF   47
+LPAREN   50
+INT(10)   51
+GT   54
+INT(20)   56
+RPAREN   58
+THEN   60
+STRING(10 > 20
+)     65
+ELSE   77
+STRING(10 <= 20
+)     82
+IN   95
+ID(print)     99
+LPAREN   104
+ID(result)     105
+RPAREN   111
+SEMICOLON   112
+IF   115
+LPAREN   118
+ID(a)     119
+LT   121
+ID(b)     123
+RPAREN   124
+THEN   126
+ID(print)     131
+LPAREN   136
+STRING(a < b
+)     137
+RPAREN   146
+ELSE   148
+ID(print)     153
+LPAREN   158
+STRING(a >= b
+)     159
+RPAREN   169
+END   171
+EOF   174

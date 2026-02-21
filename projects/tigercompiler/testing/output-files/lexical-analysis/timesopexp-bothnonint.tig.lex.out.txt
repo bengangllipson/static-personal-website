@@ -1,0 +1,4 @@
+STRING(87)     2
+TIMES   7
+STRING(23)     9
+EOF   13

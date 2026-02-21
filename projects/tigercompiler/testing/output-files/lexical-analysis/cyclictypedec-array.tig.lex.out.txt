@@ -1,0 +1,15 @@
+LET   2
+TYPE   8
+ID(a)     13
+EQ   14
+ID(b)     15
+TYPE   17
+ID(b)     22
+EQ   24
+ARRAY   26
+OF   32
+ID(a)     35
+IN   38
+STRING()     43
+END   46
+EOF   49

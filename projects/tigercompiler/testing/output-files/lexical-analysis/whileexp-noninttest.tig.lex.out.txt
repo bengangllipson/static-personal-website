@@ -1,0 +1,8 @@
+WHILE   2
+LPAREN   7
+STRING(test)     8
+RPAREN   14
+DO   16
+LPAREN   19
+RPAREN   20
+EOF   21

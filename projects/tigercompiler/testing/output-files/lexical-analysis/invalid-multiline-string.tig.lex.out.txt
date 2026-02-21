@@ -1,0 +1,12 @@
+LET   2
+VAR   8
+ID(a)     12
+ASSIGN   14
+STRING(test nvalid characters here ultiline string.)     17
+IN   70
+ID(print)     75
+LPAREN   81
+ID(a)     82
+RPAREN   83
+END   85
+EOF   88
