@@ -1,0 +1,14 @@
+LetExp([
+ VarDec(x,true,NONE,
+  IntExp(5))],
+ SeqExp[
+  LetExp([
+   VarDec(y,true,NONE,
+    IntExp(6))],
+   OpExp(PlusOp,
+    VarExp(
+     SimpleVar(x)),
+    VarExp(
+     SimpleVar(y)))),
+  VarExp(
+   SimpleVar(x))])

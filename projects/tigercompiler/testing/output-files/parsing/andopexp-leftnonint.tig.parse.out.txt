@@ -1,0 +1,6 @@
+IfExp(
+ StringExp("test"),
+ OpExp(MinusOp,
+  IntExp(0),
+  IntExp(1234)),
+ IntExp(0))
