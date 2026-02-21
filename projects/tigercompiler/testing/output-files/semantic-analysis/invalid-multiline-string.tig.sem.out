@@ -1,0 +1,6 @@
+LetExp([
+ VarDec(a,true,NONE,
+  StringExp("test nvalid characters here ultiline string."))],
+ CallExp(print,[
+  VarExp(
+   SimpleVar(a))]))

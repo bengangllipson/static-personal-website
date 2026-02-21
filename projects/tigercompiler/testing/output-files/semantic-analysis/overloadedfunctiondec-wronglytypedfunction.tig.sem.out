@@ -1,0 +1,17 @@
+LetExp([
+ FunctionDec[
+  (g,[
+   (a,true,int)],
+   SOME(int),
+   VarExp(
+    SimpleVar(a))),
+  (g,[
+   (a,true,string)],
+   SOME(int),
+   VarExp(
+    SimpleVar(a)))],
+ VarDec(x,true,NONE,
+  StringExp("test"))],
+ CallExp(g,[
+  VarExp(
+   SimpleVar(x))]))

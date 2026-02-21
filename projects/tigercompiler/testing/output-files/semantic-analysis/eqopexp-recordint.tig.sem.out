@@ -1,0 +1,16 @@
+LetExp([
+ TypeDec[
+  (rectype,
+   RecordTy[
+    (name,true,string),
+    (id,true,int)])],
+ VarDec(rec1,true,SOME(rectype),
+  RecordExp(rectype,[
+   (name,
+    StringExp("Name")),
+   (id,
+    IntExp(1))]))],
+ OpExp(EqOp,
+  VarExp(
+   SimpleVar(rec1)),
+  IntExp(1)))

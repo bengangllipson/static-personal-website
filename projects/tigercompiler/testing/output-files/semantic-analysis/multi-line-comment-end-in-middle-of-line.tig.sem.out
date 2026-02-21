@@ -1,0 +1,6 @@
+LetExp([
+ VarDec(a,true,NONE,
+  StringExp("test"))],
+ CallExp(print,[
+  VarExp(
+   SimpleVar(a))]))

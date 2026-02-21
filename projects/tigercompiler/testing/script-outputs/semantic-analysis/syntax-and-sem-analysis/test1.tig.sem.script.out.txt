@@ -1,7 +1,0 @@
-val it = true : bool
-
-
-The type of the program parsed:
-array[INT] of INT
-
-val it = () : unit

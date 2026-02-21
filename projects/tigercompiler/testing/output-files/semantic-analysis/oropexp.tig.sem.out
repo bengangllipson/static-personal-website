@@ -1,0 +1,6 @@
+IfExp(
+ IntExp(3223),
+ IntExp(1),
+ OpExp(MinusOp,
+  IntExp(0),
+  IntExp(1234)))

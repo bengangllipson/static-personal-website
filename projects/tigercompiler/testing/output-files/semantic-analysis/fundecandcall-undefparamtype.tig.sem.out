@@ -1,0 +1,13 @@
+LetExp([
+ FunctionDec[
+  (test,[
+   (n,true,notatype),
+   (x,true,int)],
+   SOME(int),
+   OpExp(PlusOp,
+    VarExp(
+     SimpleVar(n)),
+    VarExp(
+     SimpleVar(x))))]],
+ CallExp(test,[
+  IntExp(10)]))

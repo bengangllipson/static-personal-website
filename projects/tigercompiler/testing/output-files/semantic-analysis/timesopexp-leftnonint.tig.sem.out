@@ -1,0 +1,3 @@
+OpExp(TimesOp,
+ StringExp("87"),
+ IntExp(23))

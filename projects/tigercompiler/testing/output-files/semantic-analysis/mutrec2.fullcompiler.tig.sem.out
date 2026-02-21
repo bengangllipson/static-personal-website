@@ -1,0 +1,45 @@
+LetExp([
+ FunctionDec[
+  (odd,[
+   (n,true,int)],
+   SOME(int),
+   IfExp(
+    OpExp(EqOp,
+     VarExp(
+      SimpleVar(n)),
+     IntExp(0)),
+    IntExp(0),
+    IfExp(
+     OpExp(EqOp,
+      VarExp(
+       SimpleVar(n)),
+      IntExp(1)),
+     IntExp(1),
+     CallExp(even,[
+      OpExp(MinusOp,
+       VarExp(
+        SimpleVar(n)),
+       IntExp(1))])))),
+  (even,[
+   (n,true,int)],
+   SOME(int),
+   IfExp(
+    OpExp(EqOp,
+     VarExp(
+      SimpleVar(n)),
+     IntExp(0)),
+    IntExp(1),
+    CallExp(odd,[
+     OpExp(MinusOp,
+      VarExp(
+       SimpleVar(n)),
+      IntExp(1))])))]],
+ IfExp(
+  CallExp(odd,[
+   IntExp(6)]),
+  CallExp(print,[
+   StringExp("6 is odd
+")]),
+  CallExp(print,[
+   StringExp("6 is even
+")])))

@@ -1,0 +1,7 @@
+WhileExp(
+ OpExp(GtOp,
+  IntExp(10),
+  IntExp(5)),
+ SeqExp[
+  BreakExp,
+  SeqExp[]])
