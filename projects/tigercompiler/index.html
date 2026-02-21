@@ -20,5 +20,9 @@
     <li>Register allocation</li>
 </ol>
 <h3>Testing</h3>
-At each compiler phase I used a set of test Tiger programs to validate against expected output. The full <code>testing/</code> directory below contains all the test programs under <code>testing/tests/</code>, the expected output for each phase under <code>testing/correct_outputs/</code>
+At each compiler phase I used a set of test Tiger programs to validate against expected output which I outputted to files. The full
+<code>testing/</code> directory below contains all the test programs under
+<code>testing/tests/</code>. The expected output files for each phase are under the
+<code>testing/output-files/$PHASE_NAME/</code> directory. Steps after parsing, starting with semantic analysis, also validate against program output to standard out, which are under the
+<code>testing/script-outputs/$PHASE_NAME/</code> directory.
 <p><a href="/projects/tigercompiler/testing">Testing</a></p>
