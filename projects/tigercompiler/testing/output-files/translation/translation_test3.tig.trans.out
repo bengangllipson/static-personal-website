@@ -1,0 +1,236 @@
+The fragments generated from the program: 
+
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L19
+0"
+
+LABEL L17
+SEQ(
+ MOVE(
+  TEMP t123,
+  ESEQ(
+   SEQ(
+    CJUMP(GT,
+     TEMP t141,
+     CONST 0,
+     L20,L21),
+    SEQ(
+     LABEL L20,
+     SEQ(
+      EXP(
+       ESEQ(
+        EXP(
+         CALL(
+          NAME L17,
+           MEM(
+            BINOP(PLUS,
+             CONST ~4,
+             TEMP t125)),
+           BINOP(DIV,
+            TEMP t141,
+            CONST 10))),
+        CALL(
+         NAME $Print$$,
+          MEM(
+           BINOP(PLUS,
+            CONST 0,
+            MEM(
+             BINOP(PLUS,
+              CONST ~4,
+              MEM(
+               BINOP(PLUS,
+                CONST ~4,
+                TEMP t125)))))),
+          CALL(
+           NAME $Chr$$,
+            MEM(
+             BINOP(PLUS,
+              CONST 0,
+              MEM(
+               BINOP(PLUS,
+                CONST ~4,
+                MEM(
+                 BINOP(PLUS,
+                  CONST ~4,
+                  TEMP t125)))))),
+            BINOP(PLUS,
+             BINOP(MINUS,
+              TEMP t141,
+              BINOP(MUL,
+               BINOP(DIV,
+                TEMP t141,
+                CONST 10),
+               CONST 10)),
+             CALL(
+              NAME $Ord$$,
+               MEM(
+                BINOP(PLUS,
+                 CONST 0,
+                 MEM(
+                  BINOP(PLUS,
+                   CONST ~4,
+                   MEM(
+                    BINOP(PLUS,
+                     CONST ~4,
+                     TEMP t125)))))),
+               NAME L19)))))),
+      LABEL L21))),
+   CONST 0)),
+ LABEL L18)
+
+LABEL L22
+-"
+
+LABEL L23
+0"
+
+LABEL L13
+SEQ(
+ MOVE(
+  TEMP t123,
+  ESEQ(
+   SEQ(
+    CJUMP(LT,
+     TEMP t139,
+     CONST 0,
+     L27,L28),
+    SEQ(
+     LABEL L27,
+     SEQ(
+      MOVE(
+       TEMP t143,
+       ESEQ(
+        EXP(
+         CALL(
+          NAME $Print$$,
+           MEM(
+            BINOP(PLUS,
+             CONST 0,
+             MEM(
+              BINOP(PLUS,
+               CONST ~4,
+               TEMP t125)))),
+           NAME L22)),
+        CALL(
+         NAME L17,
+          TEMP t125,
+          BINOP(MINUS,
+           CONST 0,
+           TEMP t139)))),
+      SEQ(
+       JUMP(
+        NAME L29),
+       SEQ(
+        LABEL L28,
+        SEQ(
+         MOVE(
+          TEMP t143,
+          ESEQ(
+           SEQ(
+            CJUMP(GT,
+             TEMP t139,
+             CONST 0,
+             L24,L25),
+            SEQ(
+             LABEL L24,
+             SEQ(
+              MOVE(
+               TEMP t142,
+               CALL(
+                NAME L17,
+                 TEMP t125,
+                 TEMP t139)),
+              SEQ(
+               JUMP(
+                NAME L26),
+               SEQ(
+                LABEL L25,
+                SEQ(
+                 MOVE(
+                  TEMP t142,
+                  CALL(
+                   NAME $Print$$,
+                    MEM(
+                     BINOP(PLUS,
+                      CONST 0,
+                      MEM(
+                       BINOP(PLUS,
+                        CONST ~4,
+                        TEMP t125)))),
+                    NAME L23)),
+                 LABEL L26)))))),
+           TEMP t142)),
+         LABEL L29)))))),
+   TEMP t143)),
+ LABEL L14)
+
+LABEL L15
+SEQ(
+ MOVE(
+  TEMP t123,
+  ESEQ(
+   SEQ(
+    CJUMP(EQ,
+     TEMP t140,
+     CONST 0,
+     L30,L31),
+    SEQ(
+     LABEL L30,
+     SEQ(
+      MOVE(
+       TEMP t144,
+       CONST 1),
+      SEQ(
+       JUMP(
+        NAME L32),
+       SEQ(
+        LABEL L31,
+        SEQ(
+         MOVE(
+          TEMP t144,
+          BINOP(MUL,
+           TEMP t140,
+           CALL(
+            NAME L15,
+             MEM(
+              BINOP(PLUS,
+               CONST ~4,
+               TEMP t125)),
+             BINOP(MINUS,
+              TEMP t140,
+              CONST 1)))),
+         LABEL L32)))))),
+   TEMP t144)),
+ LABEL L16)
+
+LABEL L33
+
+"
+
+LABEL $Main$$
+SEQ(
+ MOVE(
+  TEMP t123,
+  ESEQ(
+   EXP(
+    CALL(
+     NAME L13,
+      TEMP t125,
+      CALL(
+       NAME L15,
+        TEMP t125,
+        CONST 6))),
+   CALL(
+    NAME $Print$$,
+     MEM(
+      BINOP(PLUS,
+       CONST 0,
+       TEMP t125)),
+     NAME L33))),
+ LABEL L12)
+

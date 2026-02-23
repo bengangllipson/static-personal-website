@@ -1,0 +1,39 @@
+The fragments generated from the program: 
+
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL $Main$$
+SEQ(
+ MOVE(
+  TEMP t123,
+  ESEQ(
+   MOVE(
+    TEMP t140,
+    ESEQ(
+     SEQ(
+      MOVE(
+       TEMP t139,
+       CALL(
+        NAME $Malloc$$,
+         CONST 8)),
+      SEQ(
+       MOVE(
+        MEM(
+         BINOP(PLUS,
+          TEMP t139,
+          CONST 0)),
+        CONST 0),
+       MOVE(
+        MEM(
+         BINOP(PLUS,
+          TEMP t139,
+          CONST 4)),
+        NAME L1))),
+     TEMP t139)),
+   TEMP t140)),
+ LABEL L12)
+

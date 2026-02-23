@@ -1,0 +1,3 @@
+OpExp(MinusOp,
+ StringExp("18"),
+ IntExp(22))

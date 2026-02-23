@@ -1,0 +1,28 @@
+The fragments generated from the program: 
+
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L13
+test"
+
+LABEL $Main$$
+SEQ(
+ MOVE(
+  TEMP t123,
+  ESEQ(
+   MOVE(
+    TEMP t139,
+    NAME L13),
+   CALL(
+    NAME $Print$$,
+     MEM(
+      BINOP(PLUS,
+       CONST 0,
+       TEMP t125)),
+     TEMP t139))),
+ LABEL L12)
+

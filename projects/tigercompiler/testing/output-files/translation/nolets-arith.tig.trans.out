@@ -1,0 +1,109 @@
+The fragments generated from the program: 
+
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL $Main$$
+SEQ(
+ MOVE(
+  TEMP t123,
+  ESEQ(
+   SEQ(
+    MOVE(
+     TEMP t141,
+     CONST 0),
+    SEQ(
+     MOVE(
+      TEMP t142,
+      ESEQ(
+       SEQ(
+        CJUMP(EQ,
+         CONST 0,
+         ESEQ(
+          SEQ(
+           CJUMP(EQ,
+            CONST 0,
+            CONST 100,
+            L14,L13),
+           SEQ(
+            LABEL L13,
+            SEQ(
+             MOVE(
+              TEMP t139,
+              CONST 1),
+             SEQ(
+              JUMP(
+               NAME L15),
+              SEQ(
+               LABEL L14,
+               SEQ(
+                MOVE(
+                 TEMP t139,
+                 CONST 1),
+                LABEL L15)))))),
+          TEMP t139),
+         L17,L16),
+        SEQ(
+         LABEL L16,
+         SEQ(
+          MOVE(
+           TEMP t140,
+           CONST 0),
+          SEQ(
+           JUMP(
+            NAME L18),
+           SEQ(
+            LABEL L17,
+            SEQ(
+             MOVE(
+              TEMP t140,
+              CONST 0),
+             LABEL L18)))))),
+       TEMP t140)),
+     SEQ(
+      CJUMP(LE,
+       TEMP t141,
+       TEMP t142,
+       L19,L21),
+      SEQ(
+       LABEL L19,
+       SEQ(
+        EXP(
+         ESEQ(
+          EXP(
+           BINOP(MINUS,
+            BINOP(PLUS,
+             CONST 1,
+             CONST 2),
+            BINOP(DIV,
+             BINOP(MUL,
+              CONST 3,
+              CONST 4),
+             CONST 5))),
+          ESEQ(
+           EXP(
+            NAME L0),
+           CONST 0))),
+        SEQ(
+         CJUMP(LT,
+          TEMP t141,
+          TEMP t142,
+          L20,L21),
+         SEQ(
+          LABEL L20,
+          SEQ(
+           MOVE(
+            TEMP t141,
+            BINOP(PLUS,
+             TEMP t141,
+             CONST 1)),
+           SEQ(
+            JUMP(
+             NAME L19),
+            LABEL L21))))))))),
+   CONST 0)),
+ LABEL L12)
+

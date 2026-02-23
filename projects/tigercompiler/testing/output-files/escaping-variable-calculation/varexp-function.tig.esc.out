@@ -1,0 +1,17 @@
+LetExp([
+ FunctionDec[
+  (sumtest,[
+   (x,false,int),
+   (y,false,int)],
+   SOME(int),
+   OpExp(PlusOp,
+    VarExp(
+     SimpleVar(x)),
+    VarExp(
+     SimpleVar(y))))],
+ VarDec(two,false,NONE,
+  VarExp(
+   SimpleVar(sumtest)))],
+ CallExp(sumtest,[
+  IntExp(3),
+  IntExp(5)]))

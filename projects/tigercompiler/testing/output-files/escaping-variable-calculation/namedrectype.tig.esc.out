@@ -1,0 +1,22 @@
+LetExp([
+ TypeDec[
+  (rectype,
+   RecordTy[
+    (name,false,string),
+    (age,false,int)]),
+  (nametype,
+   NameTy(rectype))],
+ VarDec(rec1,false,SOME(nametype),
+  RecordExp(rectype,[
+   (name,
+    StringExp("Nobody")),
+   (age,
+    IntExp(1000))]))],
+ SeqExp[
+  AssignExp(
+   FieldVar(
+    SimpleVar(rec1),
+    name),
+   StringExp("Somebody")),
+  VarExp(
+   SimpleVar(rec1))])

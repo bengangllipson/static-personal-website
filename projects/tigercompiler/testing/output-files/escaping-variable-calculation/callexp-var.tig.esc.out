@@ -1,0 +1,6 @@
+LetExp([
+ VarDec(sum,false,NONE,
+  IntExp(1))],
+ CallExp(sum,[
+  IntExp(3),
+  IntExp(5)]))

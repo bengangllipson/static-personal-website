@@ -1,0 +1,5 @@
+LetExp([
+ VarDec(x,false,SOME(int),
+  IntExp(1))],
+ VarExp(
+  SimpleVar(x)))

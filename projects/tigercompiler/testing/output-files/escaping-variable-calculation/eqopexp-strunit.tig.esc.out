@@ -1,0 +1,3 @@
+OpExp(EqOp,
+ StringExp("test"),
+ SeqExp[])

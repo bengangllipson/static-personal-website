@@ -1,0 +1,159 @@
+The fragments generated from the program: 
+
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L13
+Nobody"
+
+LABEL L16
+
+"
+
+LABEL L19
+Somebody"
+
+LABEL L22
+
+"
+
+LABEL $Main$$
+SEQ(
+ MOVE(
+  TEMP t123,
+  ESEQ(
+   MOVE(
+    TEMP t140,
+    ESEQ(
+     SEQ(
+      MOVE(
+       TEMP t139,
+       CALL(
+        NAME $Malloc$$,
+         CONST 8)),
+      SEQ(
+       MOVE(
+        MEM(
+         BINOP(PLUS,
+          TEMP t139,
+          CONST 0)),
+        NAME L13),
+       MOVE(
+        MEM(
+         BINOP(PLUS,
+          TEMP t139,
+          CONST 4)),
+        CONST 1000))),
+     TEMP t139)),
+   ESEQ(
+    SEQ(
+     EXP(
+      CALL(
+       NAME $Print$$,
+        MEM(
+         BINOP(PLUS,
+          CONST 0,
+          TEMP t125)),
+        MEM(
+         ESEQ(
+          SEQ(
+           MOVE(
+            TEMP t141,
+            TEMP t140),
+           SEQ(
+            CJUMP(EQ,
+             TEMP t141,
+             NAME L1,
+             L14,L15),
+            SEQ(
+             LABEL L14,
+             SEQ(
+              EXP(
+               CALL(
+                NAME $NullExit$$)),
+              SEQ(
+               JUMP(
+                NAME L12),
+               LABEL L15))))),
+          BINOP(PLUS,
+           TEMP t141,
+           CONST 0))))),
+     SEQ(
+      EXP(
+       CALL(
+        NAME $Print$$,
+         MEM(
+          BINOP(PLUS,
+           CONST 0,
+           TEMP t125)),
+         NAME L16)),
+      SEQ(
+       MOVE(
+        MEM(
+         ESEQ(
+          SEQ(
+           MOVE(
+            TEMP t142,
+            TEMP t140),
+           SEQ(
+            CJUMP(EQ,
+             TEMP t142,
+             NAME L1,
+             L17,L18),
+            SEQ(
+             LABEL L17,
+             SEQ(
+              EXP(
+               CALL(
+                NAME $NullExit$$)),
+              SEQ(
+               JUMP(
+                NAME L12),
+               LABEL L18))))),
+          BINOP(PLUS,
+           TEMP t142,
+           CONST 0))),
+        NAME L19),
+       EXP(
+        CALL(
+         NAME $Print$$,
+          MEM(
+           BINOP(PLUS,
+            CONST 0,
+            TEMP t125)),
+          MEM(
+           ESEQ(
+            SEQ(
+             MOVE(
+              TEMP t143,
+              TEMP t140),
+             SEQ(
+              CJUMP(EQ,
+               TEMP t143,
+               NAME L1,
+               L20,L21),
+              SEQ(
+               LABEL L20,
+               SEQ(
+                EXP(
+                 CALL(
+                  NAME $NullExit$$)),
+                SEQ(
+                 JUMP(
+                  NAME L12),
+                 LABEL L21))))),
+            BINOP(PLUS,
+             TEMP t143,
+             CONST 0)))))))),
+    CALL(
+     NAME $Print$$,
+      MEM(
+       BINOP(PLUS,
+        CONST 0,
+        TEMP t125)),
+      NAME L22)))),
+ LABEL L12)
+

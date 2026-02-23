@@ -1,0 +1,41 @@
+The fragments generated from the program: 
+
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L13
+test"
+
+LABEL L14
+test2"
+
+LABEL $Main$$
+SEQ(
+ MOVE(
+  TEMP t123,
+  ESEQ(
+   SEQ(
+    MOVE(
+     TEMP t139,
+     CONST 1),
+    SEQ(
+     CJUMP(GE,
+      CALL(
+       NAME $StringLT$$,
+        NAME L13,
+        NAME L14),
+      CONST 0,
+      L16,L15),
+     SEQ(
+      LABEL L16,
+      SEQ(
+       MOVE(
+        TEMP t139,
+        CONST 0),
+       LABEL L15)))),
+   TEMP t139)),
+ LABEL L12)
+

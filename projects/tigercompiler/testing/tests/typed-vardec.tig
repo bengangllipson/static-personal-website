@@ -1,0 +1,5 @@
+let
+	var b: int := 4
+in
+	0
+end

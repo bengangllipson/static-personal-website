@@ -1,0 +1,175 @@
+The fragments generated from the program: 
+
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L15
+This is a simple print with 	 \"ZERO\" 
+"
+
+LABEL L16
+ASCII characters specified using the \ddd format: 
+"
+
+LABEL L17
+ÀÀÀÀÀÀÀÀÀÀÀ 
+"
+
+LABEL L18
+          
+"
+
+LABEL L19
+This is for skipping sequence of characters. I want to continue to next line. We should  skip all things between the two \'s  
+"
+
+LABEL L20
+We are done - some control characters  '''''''''''' 
+"
+
+LABEL L13
+SEQ(
+ MOVE(
+  TEMP t123,
+  ESEQ(
+   SEQ(
+    CJUMP(EQ,
+     TEMP t139,
+     CONST 0,
+     L27,L28),
+    SEQ(
+     LABEL L27,
+     SEQ(
+      MOVE(
+       TEMP t142,
+       CALL(
+        NAME $Print$$,
+         MEM(
+          BINOP(PLUS,
+           CONST 0,
+           MEM(
+            BINOP(PLUS,
+             CONST ~4,
+             TEMP t125)))),
+         NAME L15)),
+      SEQ(
+       JUMP(
+        NAME L29),
+       SEQ(
+        LABEL L28,
+        SEQ(
+         MOVE(
+          TEMP t142,
+          ESEQ(
+           SEQ(
+            CJUMP(EQ,
+             TEMP t139,
+             CONST 1,
+             L24,L25),
+            SEQ(
+             LABEL L24,
+             SEQ(
+              MOVE(
+               TEMP t141,
+               ESEQ(
+                SEQ(
+                 EXP(
+                  CALL(
+                   NAME $Print$$,
+                    MEM(
+                     BINOP(PLUS,
+                      CONST 0,
+                      MEM(
+                       BINOP(PLUS,
+                        CONST ~4,
+                        TEMP t125)))),
+                    NAME L16)),
+                 EXP(
+                  CALL(
+                   NAME $Print$$,
+                    MEM(
+                     BINOP(PLUS,
+                      CONST 0,
+                      MEM(
+                       BINOP(PLUS,
+                        CONST ~4,
+                        TEMP t125)))),
+                    NAME L17))),
+                CALL(
+                 NAME $Print$$,
+                  MEM(
+                   BINOP(PLUS,
+                    CONST 0,
+                    MEM(
+                     BINOP(PLUS,
+                      CONST ~4,
+                      TEMP t125)))),
+                  NAME L18))),
+              SEQ(
+               JUMP(
+                NAME L26),
+               SEQ(
+                LABEL L25,
+                SEQ(
+                 MOVE(
+                  TEMP t141,
+                  ESEQ(
+                   SEQ(
+                    CJUMP(EQ,
+                     TEMP t139,
+                     CONST 2,
+                     L21,L22),
+                    SEQ(
+                     LABEL L21,
+                     SEQ(
+                      MOVE(
+                       TEMP t140,
+                       CALL(
+                        NAME $Print$$,
+                         MEM(
+                          BINOP(PLUS,
+                           CONST 0,
+                           MEM(
+                            BINOP(PLUS,
+                             CONST ~4,
+                             TEMP t125)))),
+                         NAME L19)),
+                      SEQ(
+                       JUMP(
+                        NAME L23),
+                       SEQ(
+                        LABEL L22,
+                        SEQ(
+                         MOVE(
+                          TEMP t140,
+                          CALL(
+                           NAME $Print$$,
+                            MEM(
+                             BINOP(PLUS,
+                              CONST 0,
+                              MEM(
+                               BINOP(PLUS,
+                                CONST ~4,
+                                TEMP t125)))),
+                            NAME L20)),
+                         LABEL L23)))))),
+                   TEMP t140)),
+                 LABEL L26)))))),
+           TEMP t141)),
+         LABEL L29)))))),
+   TEMP t142)),
+ LABEL L14)
+
+LABEL $Main$$
+SEQ(
+ MOVE(
+  TEMP t123,
+  CALL(
+   NAME L13,
+    TEMP t125,
+    CONST 3)),
+ LABEL L12)
+

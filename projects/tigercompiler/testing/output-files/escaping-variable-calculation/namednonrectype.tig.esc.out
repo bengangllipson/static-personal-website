@@ -1,0 +1,14 @@
+LetExp([
+ TypeDec[
+  (nametype,
+   NameTy(string))],
+ VarDec(rec1,false,SOME(nametype),
+  StringExp("Nobody"))],
+ SeqExp[
+  AssignExp(
+   FieldVar(
+    SimpleVar(rec1),
+    name),
+   StringExp("Somebody")),
+  VarExp(
+   SimpleVar(rec1))])
