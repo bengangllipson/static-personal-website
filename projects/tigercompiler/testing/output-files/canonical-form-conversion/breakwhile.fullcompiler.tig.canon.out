@@ -1,0 +1,218 @@
+The fragments generated from the program: 
+
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L17
+0"
+
+LABEL L15
+[
+LABEL L20,
+CJUMP(GT,
+ TEMP t141,
+ CONST 0,
+ L18,L19),
+LABEL L19,
+MOVE(
+ TEMP t123,
+ CONST 0),
+JUMP(
+ NAME L16),
+LABEL L18,
+EXP(
+ CALL(
+  NAME L15,
+   MEM(
+    BINOP(PLUS,
+     CONST ~4,
+     TEMP t125)),
+   BINOP(DIV,
+    TEMP t141,
+    CONST 10))),
+MOVE(
+ TEMP t146,
+ MEM(
+  BINOP(PLUS,
+   CONST 0,
+   MEM(
+    BINOP(PLUS,
+     CONST ~4,
+     MEM(
+      BINOP(PLUS,
+       CONST ~4,
+       TEMP t125))))))),
+MOVE(
+ TEMP t145,
+ MEM(
+  BINOP(PLUS,
+   CONST 0,
+   MEM(
+    BINOP(PLUS,
+     CONST ~4,
+     MEM(
+      BINOP(PLUS,
+       CONST ~4,
+       TEMP t125))))))),
+MOVE(
+ TEMP t144,
+ BINOP(MINUS,
+  TEMP t141,
+  BINOP(MUL,
+   BINOP(DIV,
+    TEMP t141,
+    CONST 10),
+   CONST 10))),
+MOVE(
+ TEMP t143,
+ CALL(
+  NAME $Ord$$,
+   MEM(
+    BINOP(PLUS,
+     CONST 0,
+     MEM(
+      BINOP(PLUS,
+       CONST ~4,
+       MEM(
+        BINOP(PLUS,
+         CONST ~4,
+         TEMP t125)))))),
+   NAME L17)),
+MOVE(
+ TEMP t142,
+ CALL(
+  NAME $Chr$$,
+   TEMP t145,
+   BINOP(PLUS,
+    TEMP t144,
+    TEMP t143))),
+EXP(
+ CALL(
+  NAME $Print$$,
+   TEMP t146,
+   TEMP t142)),
+JUMP(
+ NAME L19),
+LABEL L16 
+]
+
+
+LABEL L21
+-"
+
+LABEL L22
+0"
+
+LABEL L13
+[
+LABEL L29,
+CJUMP(LT,
+ TEMP t140,
+ CONST 0,
+ L26,L27),
+LABEL L27,
+CJUMP(GT,
+ TEMP t140,
+ CONST 0,
+ L23,L24),
+LABEL L24,
+MOVE(
+ TEMP t147,
+ CALL(
+  NAME $Print$$,
+   MEM(
+    BINOP(PLUS,
+     CONST 0,
+     MEM(
+      BINOP(PLUS,
+       CONST ~4,
+       TEMP t125)))),
+   NAME L22)),
+LABEL L25,
+MOVE(
+ TEMP t148,
+ TEMP t147),
+LABEL L28,
+MOVE(
+ TEMP t123,
+ TEMP t148),
+JUMP(
+ NAME L14),
+LABEL L26,
+EXP(
+ CALL(
+  NAME $Print$$,
+   MEM(
+    BINOP(PLUS,
+     CONST 0,
+     MEM(
+      BINOP(PLUS,
+       CONST ~4,
+       TEMP t125)))),
+   NAME L21)),
+MOVE(
+ TEMP t148,
+ CALL(
+  NAME L15,
+   TEMP t125,
+   BINOP(MINUS,
+    CONST 0,
+    TEMP t140))),
+JUMP(
+ NAME L28),
+LABEL L23,
+MOVE(
+ TEMP t147,
+ CALL(
+  NAME L15,
+   TEMP t125,
+   TEMP t140)),
+JUMP(
+ NAME L25),
+LABEL L14 
+]
+
+
+LABEL $Main$$
+[
+LABEL L35,
+MOVE(
+ TEMP t139,
+ CONST 0),
+LABEL L32,
+CJUMP(LT,
+ TEMP t139,
+ CONST 100,
+ L33,L34),
+LABEL L34,
+MOVE(
+ TEMP t123,
+ CALL(
+  NAME L13,
+   TEMP t125,
+   TEMP t139)),
+JUMP(
+ NAME L12),
+LABEL L33,
+MOVE(
+ TEMP t139,
+ BINOP(PLUS,
+  TEMP t139,
+  CONST 1)),
+CJUMP(GT,
+ TEMP t139,
+ CONST 41,
+ L30,L31),
+LABEL L31,
+JUMP(
+ NAME L32),
+LABEL L30,
+JUMP(
+ NAME $Main$$),
+LABEL L12 
+]
+
+

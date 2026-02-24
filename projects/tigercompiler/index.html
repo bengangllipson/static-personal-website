@@ -24,5 +24,7 @@ At each compiler phase I used a set of test Tiger programs to validate against e
 <code>testing/</code> directory below contains all the test programs under
 <code>testing/tests/</code>. The expected output files for each phase are under the
 <code>testing/output-files/$PHASE_NAME/</code> directory. Steps after parsing, starting with semantic analysis, also validate against program output to standard out, which are under the
-<code>testing/script-outputs/$PHASE_NAME/</code> directory.
-<p><a href="/projects/tigercompiler/testing">Testing</a></p>
+<code>testing/script-outputs/$PHASE_NAME/</code> directory. Steps after escaping variable calculation, starting with the translation to intermediate code, only generate output files for
+those programs which pass semantic analysis. The last two steps, liveness analysis and register allocation, are tested in the final phas under the
+<code>full-compiler-tests/</code> directory.
+<p><a href="/projects/tigercompiler/testing">testing/</a></p>

@@ -1,0 +1,4 @@
+STRING(test)     2
+NEQ   9
+STRING(test2)     12
+EOF   19

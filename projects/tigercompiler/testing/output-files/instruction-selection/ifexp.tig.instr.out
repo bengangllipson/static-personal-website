@@ -1,0 +1,18 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL $Main$$
+L16:
+L14:
+li t139,40
+L15:
+move $v0,t139
+j L12
+L13:
+li t139,30
+j L15
+L12:
+

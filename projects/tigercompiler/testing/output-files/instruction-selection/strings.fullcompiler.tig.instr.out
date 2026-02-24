@@ -1,0 +1,127 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L15
+This is a simple print with 	 \"ZERO\" 
+"
+
+LABEL L16
+ASCII characters specified using the \ddd format: 
+"
+
+LABEL L17
+efghijklmno 
+"
+
+LABEL L18
+pqrstuvwx 
+"
+
+LABEL L19
+This is for skipping sequence of characters. I want to continue to next line. We should  skip all things between the two \'s  
+"
+
+LABEL L20
+We are done - some control characters   
+"
+
+LABEL L13
+L30:
+beqz t139,L27
+L28:
+beq t139,1,L24
+L25:
+beq t139,2,L21
+L22:
+addi t146,$fp,-4
+lw t145,(t146)
+addi t144,t145,0
+lw t143,(t144)
+la t147,L20
+move $a0,t143
+move $a1,t147
+jal $Print$$
+move t140,$v0
+L23:
+move t141,t140
+L26:
+move t142,t141
+L29:
+move $v0,t142
+j L14
+L27:
+addi t151,$fp,-4
+lw t150,(t151)
+addi t149,t150,0
+lw t148,(t149)
+la t152,L15
+move $a0,t148
+move $a1,t152
+jal $Print$$
+move t142,$v0
+j L29
+L24:
+addi t156,$fp,-4
+lw t155,(t156)
+addi t154,t155,0
+lw t153,(t154)
+la t157,L16
+move $a0,t153
+move $a1,t157
+jal $Print$$
+addi t161,$fp,-4
+lw t160,(t161)
+addi t159,t160,0
+lw t158,(t159)
+la t162,L17
+move $a0,t158
+move $a1,t162
+jal $Print$$
+addi t166,$fp,-4
+lw t165,(t166)
+addi t164,t165,0
+lw t163,(t164)
+la t167,L18
+move $a0,t163
+move $a1,t167
+jal $Print$$
+move t141,$v0
+j L26
+L21:
+addi t171,$fp,-4
+lw t170,(t171)
+addi t169,t170,0
+lw t168,(t169)
+la t172,L19
+move $a0,t168
+move $a1,t172
+jal $Print$$
+move t140,$v0
+j L23
+L14:
+
+LABEL $Main$$
+L31:
+li t173,0
+move $a0,$fp
+move $a1,t173
+jal L13
+li t174,1
+move $a0,$fp
+move $a1,t174
+jal L13
+li t175,2
+move $a0,$fp
+move $a1,t175
+jal L13
+li t176,3
+move $a0,$fp
+move $a1,t176
+jal L13
+move $v0,$v0
+j L12
+L12:
+

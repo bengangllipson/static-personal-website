@@ -1,0 +1,327 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L21
+0"
+
+LABEL L19
+L24:
+bgtz t147,L22
+L23:
+li $v0,0
+j L20
+L22:
+addi t176,$fp,-4
+lw t175,(t176)
+div t177,t147,10
+move $a0,t175
+move $a1,t177
+jal L19
+addi t181,$fp,-4
+lw t180,(t181)
+addi t179,t180,-4
+lw t178,(t179)
+lw t152,0(t178)
+addi t185,$fp,-4
+lw t184,(t185)
+addi t183,t184,-4
+lw t182,(t183)
+lw t151,0(t182)
+div t188,t147,10
+mul t187,t188,10
+sub t186,t147,t187
+move t150,t186
+addi t194,$fp,-4
+lw t193,(t194)
+addi t192,t193,-4
+lw t191,(t192)
+addi t190,t191,0
+lw t189,(t190)
+la t195,L21
+move $a0,t189
+move $a1,t195
+jal $Ord$$
+move t149,$v0
+add t196,t150,t149
+move $a0,t151
+move $a1,t196
+jal $Chr$$
+move t148,$v0
+move $a0,t152
+move $a1,t148
+jal $Print$$
+j L23
+L20:
+
+LABEL L25
+-"
+
+LABEL L26
+0"
+
+LABEL L17
+L33:
+bltz t146,L30
+L31:
+bgtz t146,L27
+L28:
+addi t200,$fp,-4
+lw t199,(t200)
+addi t198,t199,0
+lw t197,(t198)
+la t201,L26
+move $a0,t197
+move $a1,t201
+jal $Print$$
+move t153,$v0
+L29:
+move t154,t153
+L32:
+move $v0,t154
+j L18
+L30:
+addi t205,$fp,-4
+lw t204,(t205)
+addi t203,t204,0
+lw t202,(t203)
+la t206,L25
+move $a0,t202
+move $a1,t206
+jal $Print$$
+li t208,0
+sub t207,t208,t146
+move $a0,$fp
+move $a1,t207
+jal L19
+move t154,$v0
+j L32
+L27:
+move $a0,$fp
+move $a1,t146
+jal L19
+move t153,$v0
+j L29
+L18:
+
+LABEL L50
+
+"
+
+LABEL L55
+
+"
+
+LABEL L64
+
+"
+
+LABEL $Main$$
+L69:
+li t139,10
+li t140,0
+bltz t139,L13
+L14:
+move $a0,t139
+move $a1,t140
+jal $InitArray$$
+move t141,$v0
+li t142,5
+li t143,6
+bltz t142,L15
+L16:
+move $a0,t142
+move $a1,t143
+jal $InitArray$$
+move t144,$v0
+li t145,2
+move t155,t141
+li t156,3
+lw t209,(t155)
+ble t209,t156,L34
+L35:
+bltz t156,L36
+L37:
+li t210,5
+li t213,4
+addi t214,t156,1
+mul t212,t213,t214
+add t211,t155,t212
+sw t210,(t211)
+move t159,t141
+move t157,t144
+li t158,3
+lw t215,(t157)
+ble t215,t158,L38
+L39:
+bltz t158,L40
+L41:
+li t218,4
+addi t219,t158,1
+mul t217,t218,t219
+add t216,t157,t217
+lw t160,(t216)
+lw t220,(t159)
+ble t220,t160,L42
+L43:
+bltz t160,L44
+L45:
+li t221,7
+li t224,4
+addi t225,t160,1
+mul t223,t224,t225
+add t222,t159,t223
+sw t221,(t222)
+move t171,$fp
+move t161,t141
+li t162,2
+lw t226,(t161)
+ble t226,t162,L46
+L47:
+bltz t162,L48
+L49:
+li t230,4
+addi t231,t162,1
+mul t229,t230,t231
+add t228,t161,t229
+lw t227,(t228)
+move $a0,t171
+move $a1,t227
+jal L17
+addi t233,$fp,0
+lw t232,(t233)
+la t234,L50
+move $a0,t232
+move $a1,t234
+jal $Print$$
+move t172,$fp
+move t163,t141
+li t164,3
+lw t235,(t163)
+ble t235,t164,L51
+L52:
+bltz t164,L53
+L54:
+li t239,4
+addi t240,t164,1
+mul t238,t239,t240
+add t237,t163,t238
+lw t236,(t237)
+move $a0,t172
+move $a1,t236
+jal L17
+addi t242,$fp,0
+lw t241,(t242)
+la t243,L55
+move $a0,t241
+move $a1,t243
+jal $Print$$
+move t173,$fp
+move t167,t141
+move t165,t144
+li t166,3
+lw t244,(t165)
+ble t244,t166,L56
+L57:
+bltz t166,L58
+L59:
+li t247,4
+addi t248,t166,1
+mul t246,t247,t248
+add t245,t165,t246
+lw t168,(t245)
+lw t249,(t167)
+ble t249,t168,L60
+L61:
+bltz t168,L62
+L63:
+li t253,4
+addi t254,t168,1
+mul t252,t253,t254
+add t251,t167,t252
+lw t250,(t251)
+move $a0,t173
+move $a1,t250
+jal L17
+addi t256,$fp,0
+lw t255,(t256)
+la t257,L64
+move $a0,t255
+move $a1,t257
+jal $Print$$
+move t174,$fp
+move t169,t144
+li t170,0
+lw t258,(t169)
+ble t258,t170,L65
+L66:
+bltz t170,L67
+L68:
+li t262,4
+addi t263,t170,1
+mul t261,t262,t263
+add t260,t169,t261
+lw t259,(t260)
+move $a0,t174
+move $a1,t259
+jal L17
+move $v0,$v0
+j L12
+L13:
+jal $SizeError$$
+j L12
+L15:
+jal $SizeError$$
+j L12
+L34:
+jal $UpperBoundExit$$
+j L12
+L36:
+jal $LowerBoundExit$$
+j L12
+L38:
+jal $UpperBoundExit$$
+j L12
+L40:
+jal $LowerBoundExit$$
+j L12
+L42:
+jal $UpperBoundExit$$
+j L12
+L44:
+jal $LowerBoundExit$$
+j L12
+L46:
+jal $UpperBoundExit$$
+j L12
+L48:
+jal $LowerBoundExit$$
+j L12
+L51:
+jal $UpperBoundExit$$
+j L12
+L53:
+jal $LowerBoundExit$$
+j L12
+L56:
+jal $UpperBoundExit$$
+j L12
+L58:
+jal $LowerBoundExit$$
+j L12
+L60:
+jal $UpperBoundExit$$
+j L12
+L62:
+jal $LowerBoundExit$$
+j L12
+L65:
+jal $UpperBoundExit$$
+j L12
+L67:
+jal $LowerBoundExit$$
+j L12
+L12:
+

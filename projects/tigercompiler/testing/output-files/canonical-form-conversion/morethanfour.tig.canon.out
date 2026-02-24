@@ -1,0 +1,45 @@
+The fragments generated from the program: 
+
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L13
+[
+LABEL L15,
+MOVE(
+ TEMP t123,
+ BINOP(PLUS,
+  TEMP t139,
+  MEM(
+   BINOP(PLUS,
+    CONST ~4,
+    TEMP t125)))),
+JUMP(
+ NAME L14),
+LABEL L14 
+]
+
+
+LABEL $Main$$
+[
+LABEL L16,
+MOVE(
+ TEMP t123,
+ CALL(
+  NAME L13,
+   TEMP t125,
+   CONST 1,
+   CONST 2,
+   CONST 3,
+   CONST 4,
+   CONST 5,
+   CONST 6)),
+JUMP(
+ NAME L12),
+LABEL L12 
+]
+
+

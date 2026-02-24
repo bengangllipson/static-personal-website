@@ -1,0 +1,20 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL $Main$$
+L15:
+la t139,L1
+move t140,t139
+la t141,L1
+beq t140,t141,L13
+L14:
+lw $v0,0(t140)
+j L12
+L13:
+jal $NullExit$$
+j L12
+L12:
+

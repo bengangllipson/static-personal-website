@@ -1,0 +1,4 @@
+LetExp([
+ VarDec(b,true,SOME(int),
+  IntExp(4))],
+ IntExp(0))

@@ -1,0 +1,24 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL $Main$$
+L17:
+li t139,0
+li t140,100
+ble t139,t140,L14
+L16:
+li $v0,0
+j L12
+L14:
+li t141,3
+la t142,L0
+bge t139,t140,L16
+L15:
+addi t143,t139,1
+move t139,t143
+j L14
+L12:
+

@@ -1,0 +1,11 @@
+LET   2
+VAR   7
+ID(b)     11
+COLON   12
+ID(int)     14
+ASSIGN   18
+INT(4)   21
+IN   23
+INT(0)   27
+END   29
+EOF   32

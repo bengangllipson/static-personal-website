@@ -1,0 +1,24 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L13
+Name"
+
+LABEL $Main$$
+L14:
+li t141,8
+move $a0,t141
+jal $Malloc$$
+move t139,$v0
+la t142,L13
+sw t142,0(t139)
+li t143,1
+sw t143,4(t139)
+move t140,t139
+move $v0,t140
+j L12
+L12:
+

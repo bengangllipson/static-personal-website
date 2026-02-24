@@ -1,0 +1,21 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L13
+test"
+
+LABEL $Main$$
+L14:
+la t139,L13
+addi t141,$fp,0
+lw t140,(t141)
+move $a0,t140
+move $a1,t139
+jal $Print$$
+move $v0,$v0
+j L12
+L12:
+

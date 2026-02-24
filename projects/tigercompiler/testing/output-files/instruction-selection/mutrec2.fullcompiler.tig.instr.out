@@ -1,0 +1,89 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L13
+L23:
+beqz t139,L20
+L21:
+beq t139,1,L17
+L18:
+addi t147,$fp,-4
+lw t146,(t147)
+sub t148,t139,1
+move $a0,t146
+move $a1,t148
+jal L15
+move t141,$v0
+L19:
+move t142,t141
+L22:
+move $v0,t142
+j L14
+L20:
+li t142,0
+j L22
+L17:
+li t141,1
+j L19
+L14:
+
+LABEL L15
+L27:
+beqz t140,L24
+L25:
+addi t150,$fp,-4
+lw t149,(t150)
+sub t151,t140,1
+move $a0,t149
+move $a1,t151
+jal L13
+move t143,$v0
+L26:
+move $v0,t143
+j L16
+L24:
+li t143,1
+j L26
+L16:
+
+LABEL L28
+6 is odd
+"
+
+LABEL L29
+6 is even
+"
+
+LABEL $Main$$
+L33:
+li t152,6
+move $a0,$fp
+move $a1,t152
+jal L13
+move t145,$v0
+beqz t145,L31
+L30:
+addi t154,$fp,0
+lw t153,(t154)
+la t155,L28
+move $a0,t153
+move $a1,t155
+jal $Print$$
+move t144,$v0
+L32:
+move $v0,t144
+j L12
+L31:
+addi t157,$fp,0
+lw t156,(t157)
+la t158,L29
+move $a0,t156
+move $a1,t158
+jal $Print$$
+move t144,$v0
+j L32
+L12:
+

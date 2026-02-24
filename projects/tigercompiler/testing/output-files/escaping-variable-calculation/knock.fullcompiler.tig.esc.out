@@ -1,0 +1,65 @@
+LetExp([
+ TypeDec[
+  (counter,
+   NameTy(int))],
+ VarDec(c,true,SOME(counter),
+  IntExp(0)),
+ FunctionDec[
+  (knockKnock,[],
+   NONE,
+   SeqExp[
+    IfExp(
+     OpExp(EqOp,
+      VarExp(
+       SimpleVar(c)),
+      IntExp(0)),
+     CallExp(print,[
+      StringExp("Knock knock.
+")]),
+     IfExp(
+      OpExp(EqOp,
+       VarExp(
+        SimpleVar(c)),
+       IntExp(1)),
+      CallExp(print,[
+       StringExp("Who's there?
+")]),
+      IfExp(
+       OpExp(EqOp,
+        VarExp(
+         SimpleVar(c)),
+        IntExp(2)),
+       CallExp(print,[
+        StringExp("Little old lady.
+")]),
+       IfExp(
+        OpExp(EqOp,
+         VarExp(
+          SimpleVar(c)),
+         IntExp(3)),
+        CallExp(print,[
+         StringExp("Little old lady who?
+")]),
+        CallExp(print,[
+         StringExp("I didn't know you could yodel!
+")]))))),
+    AssignExp(
+     SimpleVar(c),
+     OpExp(PlusOp,
+      VarExp(
+       SimpleVar(c)),
+      IntExp(1))),
+    IfExp(
+     OpExp(GtOp,
+      VarExp(
+       SimpleVar(c)),
+      IntExp(4)),
+     AssignExp(
+      SimpleVar(c),
+      IntExp(0)))])]],
+ SeqExp[
+  CallExp(knockKnock,[]),
+  CallExp(knockKnock,[]),
+  CallExp(knockKnock,[]),
+  CallExp(knockKnock,[]),
+  CallExp(knockKnock,[])])

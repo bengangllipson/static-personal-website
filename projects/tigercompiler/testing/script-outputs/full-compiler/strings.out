@@ -1,0 +1,6 @@
+This is a simple print with 	 "ZERO" 
+ASCII characters specified using the \ddd format: 
+efghijklmno 
+pqrstuvwx 
+This is for skipping sequence of characters. I want to continue to next line. We should  skip all things between the two \'s  
+We are done - some control characters   

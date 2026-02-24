@@ -1,0 +1,61 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L13
+10 > 20
+"
+
+LABEL L14
+10 <= 20
+"
+
+LABEL L18
+a < b
+"
+
+LABEL L19
+a >= b
+"
+
+LABEL $Main$$
+L23:
+li t139,12
+li t140,19
+L16:
+la t141,L14
+L17:
+move t142,t141
+addi t145,$fp,0
+lw t144,(t145)
+move $a0,t144
+move $a1,t142
+jal $Print$$
+blt t139,t140,L20
+L21:
+addi t147,$fp,0
+lw t146,(t147)
+la t148,L19
+move $a0,t146
+move $a1,t148
+jal $Print$$
+move t143,$v0
+L22:
+move $v0,t143
+j L12
+L15:
+la t141,L13
+j L17
+L20:
+addi t150,$fp,0
+lw t149,(t150)
+la t151,L18
+move $a0,t149
+move $a1,t151
+jal $Print$$
+move t143,$v0
+j L22
+L12:
+

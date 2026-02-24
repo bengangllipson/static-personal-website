@@ -1,0 +1,273 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L17
+0"
+
+LABEL L15
+L20:
+bgtz t140,L18
+L19:
+li $v0,0
+j L16
+L18:
+addi t157,$fp,-4
+lw t156,(t157)
+div t158,t140,10
+move $a0,t156
+move $a1,t158
+jal L15
+addi t162,$fp,-4
+lw t161,(t162)
+addi t160,t161,-4
+lw t159,(t160)
+lw t145,0(t159)
+addi t166,$fp,-4
+lw t165,(t166)
+addi t164,t165,-4
+lw t163,(t164)
+lw t144,0(t163)
+div t169,t140,10
+mul t168,t169,10
+sub t167,t140,t168
+move t143,t167
+addi t175,$fp,-4
+lw t174,(t175)
+addi t173,t174,-4
+lw t172,(t173)
+addi t171,t172,0
+lw t170,(t171)
+la t176,L17
+move $a0,t170
+move $a1,t176
+jal $Ord$$
+move t142,$v0
+add t177,t143,t142
+move $a0,t144
+move $a1,t177
+jal $Chr$$
+move t141,$v0
+move $a0,t145
+move $a1,t141
+jal $Print$$
+j L19
+L16:
+
+LABEL L21
+-"
+
+LABEL L22
+0"
+
+LABEL L13
+L29:
+bltz t139,L26
+L27:
+bgtz t139,L23
+L24:
+addi t181,$fp,-4
+lw t180,(t181)
+addi t179,t180,0
+lw t178,(t179)
+la t182,L22
+move $a0,t178
+move $a1,t182
+jal $Print$$
+move t146,$v0
+L25:
+move t147,t146
+L28:
+move $v0,t147
+j L14
+L26:
+addi t186,$fp,-4
+lw t185,(t186)
+addi t184,t185,0
+lw t183,(t184)
+la t187,L21
+move $a0,t183
+move $a1,t187
+jal $Print$$
+li t189,0
+sub t188,t189,t139
+move $a0,$fp
+move $a1,t188
+jal L15
+move t147,$v0
+j L28
+L23:
+move $a0,$fp
+move $a1,t139
+jal L15
+move t146,$v0
+j L25
+L14:
+
+LABEL L30
+
+"
+
+LABEL L31
+
+"
+
+LABEL L32
+
+"
+
+LABEL L36
+
+"
+
+LABEL L40
+
+"
+
+LABEL L44
+
+"
+
+LABEL L48
+
+"
+
+LABEL L49
+
+"
+
+LABEL L50
+
+"
+
+LABEL $Main$$
+L51:
+li t190,1
+move $a0,$fp
+move $a1,t190
+jal L13
+addi t192,$fp,0
+lw t191,(t192)
+la t193,L30
+move $a0,t191
+move $a1,t193
+jal $Print$$
+li t194,3
+move $a0,$fp
+move $a1,t194
+jal L13
+addi t196,$fp,0
+lw t195,(t196)
+la t197,L31
+move $a0,t195
+move $a1,t197
+jal $Print$$
+li t199,18
+addi t198,t199,1
+move $a0,$fp
+move $a1,t198
+jal L13
+addi t201,$fp,0
+lw t200,(t201)
+la t202,L32
+move $a0,t200
+move $a1,t202
+jal $Print$$
+move t152,$fp
+L33:
+li t148,1
+L35:
+move $a0,t152
+move $a1,t148
+jal L13
+addi t204,$fp,0
+lw t203,(t204)
+la t205,L36
+move $a0,t203
+move $a1,t205
+jal $Print$$
+move t153,$fp
+L38:
+li t149,0
+L39:
+move $a0,t153
+move $a1,t149
+jal L13
+addi t207,$fp,0
+lw t206,(t207)
+la t208,L40
+move $a0,t206
+move $a1,t208
+jal $Print$$
+move t154,$fp
+L42:
+li t150,1
+L43:
+move $a0,t154
+move $a1,t150
+jal L13
+addi t210,$fp,0
+lw t209,(t210)
+la t211,L44
+move $a0,t209
+move $a1,t211
+jal $Print$$
+move t155,$fp
+L46:
+li t151,0
+L47:
+move $a0,t155
+move $a1,t151
+jal L13
+addi t213,$fp,0
+lw t212,(t213)
+la t214,L48
+move $a0,t212
+move $a1,t214
+jal $Print$$
+li t216,0
+addi t215,t216,1
+move $a0,$fp
+move $a1,t215
+jal L13
+addi t218,$fp,0
+lw t217,(t218)
+la t219,L49
+move $a0,t217
+move $a1,t219
+jal $Print$$
+li t221,9
+addi t220,t221,1
+move $a0,$fp
+move $a1,t220
+jal L13
+addi t223,$fp,0
+lw t222,(t223)
+la t224,L50
+move $a0,t222
+move $a1,t224
+jal $Print$$
+li t226,5
+li t227,9
+mul t225,t226,t227
+move $a0,$fp
+move $a1,t225
+jal L13
+move $v0,$v0
+j L12
+L34:
+li t148,0
+j L35
+L37:
+li t149,1
+j L39
+L41:
+li t150,1
+j L43
+L45:
+li t151,1
+j L47
+L12:
+

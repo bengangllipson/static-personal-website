@@ -1,0 +1,155 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L19
+0"
+
+LABEL L17
+L22:
+bgtz t141,L20
+L21:
+li $v0,0
+j L18
+L20:
+addi t155,$fp,-4
+lw t154,(t155)
+div t156,t141,10
+move $a0,t154
+move $a1,t156
+jal L17
+addi t160,$fp,-4
+lw t159,(t160)
+addi t158,t159,-4
+lw t157,(t158)
+lw t146,0(t157)
+addi t164,$fp,-4
+lw t163,(t164)
+addi t162,t163,-4
+lw t161,(t162)
+lw t145,0(t161)
+div t167,t141,10
+mul t166,t167,10
+sub t165,t141,t166
+move t144,t165
+addi t173,$fp,-4
+lw t172,(t173)
+addi t171,t172,-4
+lw t170,(t171)
+addi t169,t170,0
+lw t168,(t169)
+la t174,L19
+move $a0,t168
+move $a1,t174
+jal $Ord$$
+move t143,$v0
+add t175,t144,t143
+move $a0,t145
+move $a1,t175
+jal $Chr$$
+move t142,$v0
+move $a0,t146
+move $a1,t142
+jal $Print$$
+j L21
+L18:
+
+LABEL L23
+-"
+
+LABEL L24
+0"
+
+LABEL L13
+L31:
+bltz t139,L28
+L29:
+bgtz t139,L25
+L26:
+addi t179,$fp,-4
+lw t178,(t179)
+addi t177,t178,0
+lw t176,(t177)
+la t180,L24
+move $a0,t176
+move $a1,t180
+jal $Print$$
+move t147,$v0
+L27:
+move t148,t147
+L30:
+move $v0,t148
+j L14
+L28:
+addi t184,$fp,-4
+lw t183,(t184)
+addi t182,t183,0
+lw t181,(t182)
+la t185,L23
+move $a0,t181
+move $a1,t185
+jal $Print$$
+li t187,0
+sub t186,t187,t139
+move $a0,$fp
+move $a1,t186
+jal L17
+move t148,$v0
+j L30
+L25:
+move $a0,$fp
+move $a1,t139
+jal L17
+move t147,$v0
+j L27
+L14:
+
+LABEL L15
+L35:
+beqz t140,L32
+L33:
+move t151,t140
+addi t189,$fp,-4
+lw t188,(t189)
+sub t190,t140,1
+move $a0,t188
+move $a1,t190
+jal L15
+move t150,$v0
+mul t191,t151,t150
+move t149,t191
+L34:
+move $v0,t149
+j L16
+L32:
+li t149,1
+j L34
+L16:
+
+LABEL L36
+
+"
+
+LABEL $Main$$
+L37:
+move t153,$fp
+li t192,6
+move $a0,$fp
+move $a1,t192
+jal L15
+move t152,$v0
+move $a0,t153
+move $a1,t152
+jal L13
+addi t194,$fp,0
+lw t193,(t194)
+la t195,L36
+move $a0,t193
+move $a1,t195
+jal $Print$$
+move $v0,$v0
+j L12
+L12:
+

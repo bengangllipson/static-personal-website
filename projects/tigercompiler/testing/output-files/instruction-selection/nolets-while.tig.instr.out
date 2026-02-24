@@ -1,0 +1,19 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL $Main$$
+L17:
+L14:
+j L15
+L16:
+li $v0,0
+j L12
+L15:
+li t139,3
+la t140,L0
+j L14
+L12:
+

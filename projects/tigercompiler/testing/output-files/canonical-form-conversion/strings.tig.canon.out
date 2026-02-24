@@ -1,0 +1,162 @@
+The fragments generated from the program: 
+
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L15
+This is a simple print with 	 \"ZERO\" 
+"
+
+LABEL L16
+ASCII characters specified using the \ddd format: 
+"
+
+LABEL L17
+~~~~~~~~~~ 
+"
+
+LABEL L18
+{{{{{{{{{ 
+"
+
+LABEL L19
+This is for skipping sequence of characters. I want to continue to next line. We should  skip all things between the two \'s  
+"
+
+LABEL L20
+We are done - some control characters   
+"
+
+LABEL L13
+[
+LABEL L30,
+CJUMP(EQ,
+ TEMP t139,
+ CONST 0,
+ L27,L28),
+LABEL L28,
+CJUMP(EQ,
+ TEMP t139,
+ CONST 1,
+ L24,L25),
+LABEL L25,
+CJUMP(EQ,
+ TEMP t139,
+ CONST 2,
+ L21,L22),
+LABEL L22,
+MOVE(
+ TEMP t140,
+ CALL(
+  NAME $Print$$,
+   MEM(
+    BINOP(PLUS,
+     CONST 0,
+     MEM(
+      BINOP(PLUS,
+       CONST ~4,
+       TEMP t125)))),
+   NAME L20)),
+LABEL L23,
+MOVE(
+ TEMP t141,
+ TEMP t140),
+LABEL L26,
+MOVE(
+ TEMP t142,
+ TEMP t141),
+LABEL L29,
+MOVE(
+ TEMP t123,
+ TEMP t142),
+JUMP(
+ NAME L14),
+LABEL L27,
+MOVE(
+ TEMP t142,
+ CALL(
+  NAME $Print$$,
+   MEM(
+    BINOP(PLUS,
+     CONST 0,
+     MEM(
+      BINOP(PLUS,
+       CONST ~4,
+       TEMP t125)))),
+   NAME L15)),
+JUMP(
+ NAME L29),
+LABEL L24,
+EXP(
+ CALL(
+  NAME $Print$$,
+   MEM(
+    BINOP(PLUS,
+     CONST 0,
+     MEM(
+      BINOP(PLUS,
+       CONST ~4,
+       TEMP t125)))),
+   NAME L16)),
+EXP(
+ CALL(
+  NAME $Print$$,
+   MEM(
+    BINOP(PLUS,
+     CONST 0,
+     MEM(
+      BINOP(PLUS,
+       CONST ~4,
+       TEMP t125)))),
+   NAME L17)),
+MOVE(
+ TEMP t141,
+ CALL(
+  NAME $Print$$,
+   MEM(
+    BINOP(PLUS,
+     CONST 0,
+     MEM(
+      BINOP(PLUS,
+       CONST ~4,
+       TEMP t125)))),
+   NAME L18)),
+JUMP(
+ NAME L26),
+LABEL L21,
+MOVE(
+ TEMP t140,
+ CALL(
+  NAME $Print$$,
+   MEM(
+    BINOP(PLUS,
+     CONST 0,
+     MEM(
+      BINOP(PLUS,
+       CONST ~4,
+       TEMP t125)))),
+   NAME L19)),
+JUMP(
+ NAME L23),
+LABEL L14 
+]
+
+
+LABEL $Main$$
+[
+LABEL L31,
+MOVE(
+ TEMP t123,
+ CALL(
+  NAME L13,
+   TEMP t125,
+   CONST 3)),
+JUMP(
+ NAME L12),
+LABEL L12 
+]
+
+

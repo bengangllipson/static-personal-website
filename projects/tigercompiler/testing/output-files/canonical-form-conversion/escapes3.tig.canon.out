@@ -1,0 +1,174 @@
+The fragments generated from the program: 
+
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L15
+[
+LABEL L17,
+MOVE(
+ TEMP t144,
+ CONST 6),
+MOVE(
+ TEMP t145,
+ CONST 7),
+MOVE(
+ TEMP t146,
+ CONST 8),
+MOVE(
+ TEMP t146,
+ BINOP(PLUS,
+  BINOP(PLUS,
+   BINOP(PLUS,
+    TEMP t146,
+    TEMP t141),
+   TEMP t142),
+  TEMP t143)),
+MOVE(
+ TEMP t123,
+ BINOP(PLUS,
+  BINOP(PLUS,
+   BINOP(PLUS,
+    BINOP(PLUS,
+     BINOP(PLUS,
+      MEM(
+       BINOP(PLUS,
+        CONST ~12,
+        MEM(
+         BINOP(PLUS,
+          CONST ~12,
+          TEMP t125)))),
+      MEM(
+       BINOP(PLUS,
+        CONST ~8,
+        MEM(
+         BINOP(PLUS,
+          CONST ~4,
+          MEM(
+           BINOP(PLUS,
+            CONST ~12,
+            TEMP t125))))))),
+     MEM(
+      BINOP(PLUS,
+       CONST ~12,
+       MEM(
+        BINOP(PLUS,
+         CONST ~4,
+         MEM(
+          BINOP(PLUS,
+           CONST ~12,
+           TEMP t125))))))),
+    MEM(
+     BINOP(PLUS,
+      CONST ~16,
+      MEM(
+       BINOP(PLUS,
+        CONST ~12,
+        TEMP t125))))),
+   BINOP(MUL,
+    TEMP t144,
+    TEMP t145)),
+  TEMP t146)),
+JUMP(
+ NAME L16),
+LABEL L16 
+]
+
+
+LABEL L13
+[
+LABEL L18,
+MOVE(
+ MEM(
+  BINOP(PLUS,
+   CONST ~12,
+   TEMP t125)),
+ CONST 4),
+MOVE(
+ MEM(
+  BINOP(PLUS,
+   CONST ~16,
+   TEMP t125)),
+ CONST 5),
+MOVE(
+ TEMP t147,
+ CALL(
+  NAME L15,
+   TEMP t125,
+   MEM(
+    BINOP(PLUS,
+     CONST ~12,
+     TEMP t125)),
+   TEMP t140,
+   MEM(
+    BINOP(PLUS,
+     CONST ~16,
+     TEMP t125)))),
+MOVE(
+ TEMP t123,
+ BINOP(PLUS,
+  BINOP(PLUS,
+   TEMP t147,
+   MEM(
+    BINOP(PLUS,
+     CONST ~12,
+     TEMP t125))),
+  BINOP(MUL,
+   MEM(
+    BINOP(PLUS,
+     CONST ~8,
+     MEM(
+      BINOP(PLUS,
+       CONST ~4,
+       TEMP t125)))),
+   TEMP t140))),
+JUMP(
+ NAME L14),
+LABEL L14 
+]
+
+
+LABEL $Main$$
+[
+LABEL L19,
+MOVE(
+ TEMP t139,
+ CONST 1),
+MOVE(
+ MEM(
+  BINOP(PLUS,
+   CONST ~8,
+   TEMP t125)),
+ CONST 2),
+MOVE(
+ MEM(
+  BINOP(PLUS,
+   CONST ~12,
+   TEMP t125)),
+ CONST 3),
+MOVE(
+ TEMP t148,
+ CALL(
+  NAME L13,
+   TEMP t125,
+   MEM(
+    BINOP(PLUS,
+     CONST ~8,
+     TEMP t125)))),
+MOVE(
+ TEMP t123,
+ BINOP(PLUS,
+  TEMP t148,
+  MEM(
+   BINOP(PLUS,
+    CONST ~12,
+    TEMP t125)))),
+JUMP(
+ NAME L12),
+LABEL L12 
+]
+
+

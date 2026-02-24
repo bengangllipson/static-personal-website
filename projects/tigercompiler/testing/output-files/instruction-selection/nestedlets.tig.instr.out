@@ -1,0 +1,15 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL $Main$$
+L13:
+li t139,5
+li t140,6
+add t141,t139,t140
+move $v0,t139
+j L12
+L12:
+

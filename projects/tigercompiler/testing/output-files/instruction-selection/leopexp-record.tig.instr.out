@@ -1,0 +1,41 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L13
+Name"
+
+LABEL L14
+Test"
+
+LABEL $Main$$
+L17:
+li t144,8
+move $a0,t144
+jal $Malloc$$
+move t139,$v0
+la t145,L13
+sw t145,0(t139)
+li t146,1
+sw t146,4(t139)
+move t140,t139
+li t147,8
+move $a0,t147
+jal $Malloc$$
+move t141,$v0
+la t148,L14
+sw t148,0(t141)
+li t149,2
+sw t149,4(t141)
+move t142,t141
+li t143,1
+ble t140,t142,L15
+L16:
+li t143,0
+L15:
+move $v0,t143
+j L12
+L12:
+

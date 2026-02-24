@@ -1,0 +1,39 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL $Main$$
+L19:
+li t139,10
+li t140,0
+bltz t139,L13
+L14:
+move $a0,t139
+move $a1,t140
+jal $InitArray$$
+move t141,$v0
+li t142,10
+li t143,0
+bltz t142,L15
+L16:
+move $a0,t142
+move $a1,t143
+jal $InitArray$$
+move t144,$v0
+li t145,1
+bgt t141,t144,L17
+L18:
+li t145,0
+L17:
+move $v0,t145
+j L12
+L13:
+jal $SizeError$$
+j L12
+L15:
+jal $SizeError$$
+j L12
+L12:
+

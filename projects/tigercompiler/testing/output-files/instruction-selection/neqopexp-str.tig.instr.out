@@ -1,0 +1,30 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L13
+test"
+
+LABEL L14
+test2"
+
+LABEL $Main$$
+L17:
+li t139,1
+la t141,L13
+la t142,L14
+move $a0,t141
+move $a1,t142
+jal $StringEqual$$
+move t140,$v0
+bnez t140,L16
+L15:
+move $v0,t139
+j L12
+L16:
+li t139,0
+j L15
+L12:
+

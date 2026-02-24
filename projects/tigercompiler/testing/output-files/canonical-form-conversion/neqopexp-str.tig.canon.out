@@ -1,0 +1,46 @@
+The fragments generated from the program: 
+
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L13
+test"
+
+LABEL L14
+test2"
+
+LABEL $Main$$
+[
+LABEL L17,
+MOVE(
+ TEMP t139,
+ CONST 1),
+MOVE(
+ TEMP t140,
+ CALL(
+  NAME $StringEqual$$,
+   NAME L13,
+   NAME L14)),
+CJUMP(NE,
+ TEMP t140,
+ CONST 0,
+ L16,L15),
+LABEL L15,
+MOVE(
+ TEMP t123,
+ TEMP t139),
+JUMP(
+ NAME L12),
+LABEL L16,
+MOVE(
+ TEMP t139,
+ CONST 0),
+JUMP(
+ NAME L15),
+LABEL L12 
+]
+
+

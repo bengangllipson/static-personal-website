@@ -1,0 +1,40 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL $Main$$
+L19:
+li t139,10
+li t140,0
+bltz t139,L13
+L14:
+move $a0,t139
+move $a1,t140
+jal $InitArray$$
+move t141,$v0
+move t142,t141
+li t143,2
+lw t144,(t142)
+ble t144,t143,L15
+L16:
+bltz t143,L17
+L18:
+li t147,4
+addi t148,t143,1
+mul t146,t147,t148
+add t145,t142,t146
+lw $v0,(t145)
+j L12
+L13:
+jal $SizeError$$
+j L12
+L15:
+jal $UpperBoundExit$$
+j L12
+L17:
+jal $LowerBoundExit$$
+j L12
+L12:
+

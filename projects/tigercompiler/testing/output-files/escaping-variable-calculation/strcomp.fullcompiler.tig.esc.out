@@ -1,0 +1,81 @@
+SeqExp[
+ IfExp(
+  OpExp(EqOp,
+   StringExp("this"),
+   StringExp("this")),
+  CallExp(print,[
+   StringExp("equal
+")]),
+  CallExp(print,[
+   StringExp("not equal
+")])),
+ IfExp(
+  OpExp(EqOp,
+   StringExp("this"),
+   StringExp("that")),
+  CallExp(print,[
+   StringExp("equal
+")]),
+  CallExp(print,[
+   StringExp("not equal
+")])),
+ IfExp(
+  OpExp(LtOp,
+   StringExp("this"),
+   StringExp("that")),
+  CallExp(print,[
+   StringExp("less
+")]),
+  CallExp(print,[
+   StringExp("greater or equal
+")])),
+ IfExp(
+  OpExp(LtOp,
+   StringExp("that"),
+   StringExp("this")),
+  CallExp(print,[
+   StringExp("less
+")]),
+  CallExp(print,[
+   StringExp("greater or equal
+")])),
+ IfExp(
+  OpExp(GtOp,
+   StringExp("this"),
+   StringExp("that")),
+  CallExp(print,[
+   StringExp("greater
+")]),
+  CallExp(print,[
+   StringExp("less or equal
+")])),
+ IfExp(
+  OpExp(GtOp,
+   StringExp("that"),
+   StringExp("this")),
+  CallExp(print,[
+   StringExp("greater
+")]),
+  CallExp(print,[
+   StringExp("less or equal
+")])),
+ IfExp(
+  OpExp(LeOp,
+   StringExp("this"),
+   StringExp("this")),
+  CallExp(print,[
+   StringExp("less or equal
+")]),
+  CallExp(print,[
+   StringExp("greater
+")])),
+ IfExp(
+  OpExp(GeOp,
+   StringExp("this"),
+   StringExp("that")),
+  CallExp(print,[
+   StringExp("greater or equal
+")]),
+  CallExp(print,[
+   StringExp("less
+")]))]

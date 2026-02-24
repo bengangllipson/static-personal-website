@@ -1,0 +1,17 @@
+LetExp([
+ TypeDec[
+  (a,
+   ArrayTy(int))],
+ VarDec(arr1,false,NONE,
+  ArrayExp(a,
+   IntExp(10),
+   IntExp(0))),
+ VarDec(arr2,false,NONE,
+  ArrayExp(a,
+   IntExp(10),
+   IntExp(0)))],
+ OpExp(LtOp,
+  VarExp(
+   SimpleVar(arr1)),
+  VarExp(
+   SimpleVar(arr2))))

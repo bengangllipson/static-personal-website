@@ -1,0 +1,15 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L13
+test"
+
+LABEL $Main$$
+L14:
+la $v0,L13
+j L12
+L12:
+

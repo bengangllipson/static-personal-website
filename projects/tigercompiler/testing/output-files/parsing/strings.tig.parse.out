@@ -21,10 +21,10 @@ NONE,
        StringExp("ASCII characters specified using the \ddd format: 
 ")]),
       CallExp(print,[
-       StringExp("ÀÀÀÀÀÀÀÀÀÀÀ 
+       StringExp("~~~~~~~~~~ 
 ")]),
       CallExp(print,[
-       StringExp("          
+       StringExp("{{{{{{{{{ 
 ")])],
      IfExp(
       OpExp(EqOp,
@@ -35,7 +35,7 @@ NONE,
        StringExp("This is for skipping sequence of characters. I want to continue to next line. We should  skip all things between the two \'s  
 ")]),
       CallExp(print,[
-       StringExp("We are done - some control characters  '''''''''''' 
+       StringExp("We are done - some control characters   
 ")])))))]],
  CallExp(print_something,[
   IntExp(3)]))

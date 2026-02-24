@@ -19,12 +19,19 @@ SEQ(
     SEQ(
      LABEL L13,
      SEQ(
-      EXP(
-       ESEQ(
-        EXP(
-         NAME L0),
-        CONST 0)),
-      LABEL L14))),
-   CONST 0)),
+      MOVE(
+       TEMP t139,
+       CONST 30),
+      SEQ(
+       JUMP(
+        NAME L15),
+       SEQ(
+        LABEL L14,
+        SEQ(
+         MOVE(
+          TEMP t139,
+          CONST 40),
+         LABEL L15)))))),
+   TEMP t139)),
  LABEL L12)
 

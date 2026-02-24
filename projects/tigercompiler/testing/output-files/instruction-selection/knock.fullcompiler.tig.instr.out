@@ -1,0 +1,158 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L15
+Knock knock.
+"
+
+LABEL L16
+Who's there?
+"
+
+LABEL L17
+Little old lady.
+"
+
+LABEL L18
+Little old lady who?
+"
+
+LABEL L19
+I didn't know you could yodel!
+"
+
+LABEL L13
+L34:
+addi t146,$fp,0
+lw t145,(t146)
+addi t144,t145,-8
+lw t143,(t144)
+beqz t143,L29
+L30:
+addi t150,$fp,0
+lw t149,(t150)
+addi t148,t149,-8
+lw t147,(t148)
+li t151,1
+beq t147,t151,L26
+L27:
+addi t155,$fp,0
+lw t154,(t155)
+addi t153,t154,-8
+lw t152,(t153)
+li t156,2
+beq t152,t156,L23
+L24:
+addi t160,$fp,0
+lw t159,(t160)
+addi t158,t159,-8
+lw t157,(t158)
+li t161,3
+beq t157,t161,L20
+L21:
+addi t165,$fp,0
+lw t164,(t165)
+addi t163,t164,0
+lw t162,(t163)
+la t166,L19
+move $a0,t162
+move $a1,t166
+jal $Print$$
+move t139,$v0
+L22:
+move t140,t139
+L25:
+move t141,t140
+L28:
+move t142,t141
+L31:
+addi t171,$fp,0
+lw t170,(t171)
+addi t169,t170,-8
+lw t168,(t169)
+addi t167,t168,1
+addi t173,$fp,0
+lw t172,(t173)
+sw t167,-8(t172)
+addi t177,$fp,0
+lw t176,(t177)
+addi t175,t176,-8
+lw t174,(t175)
+li t178,4
+bgt t174,t178,L32
+L33:
+li $v0,0
+j L14
+L29:
+addi t182,$fp,0
+lw t181,(t182)
+addi t180,t181,0
+lw t179,(t180)
+la t183,L15
+move $a0,t179
+move $a1,t183
+jal $Print$$
+move t142,$v0
+j L31
+L26:
+addi t187,$fp,0
+lw t186,(t187)
+addi t185,t186,0
+lw t184,(t185)
+la t188,L16
+move $a0,t184
+move $a1,t188
+jal $Print$$
+move t141,$v0
+j L28
+L23:
+addi t192,$fp,0
+lw t191,(t192)
+addi t190,t191,0
+lw t189,(t190)
+la t193,L17
+move $a0,t189
+move $a1,t193
+jal $Print$$
+move t140,$v0
+j L25
+L20:
+addi t197,$fp,0
+lw t196,(t197)
+addi t195,t196,0
+lw t194,(t195)
+la t198,L18
+move $a0,t194
+move $a1,t198
+jal $Print$$
+move t139,$v0
+j L22
+L32:
+li t199,0
+addi t201,$fp,0
+lw t200,(t201)
+sw t199,-8(t200)
+j L33
+L14:
+
+LABEL $Main$$
+L35:
+li t202,0
+sw t202,-8($fp)
+move $a0,$fp
+jal L13
+move $a0,$fp
+jal L13
+move $a0,$fp
+jal L13
+move $a0,$fp
+jal L13
+move $a0,$fp
+jal L13
+move $v0,$v0
+j L12
+L12:
+

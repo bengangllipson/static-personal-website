@@ -1,0 +1,172 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L13
+test"
+
+LABEL L32
+new"
+
+LABEL $Main$$
+L47:
+li t144,10
+li t164,4
+move $a0,t164
+jal $Malloc$$
+move t143,$v0
+move t165,t143
+move t163,t165
+li t166,4
+move $a0,t166
+jal $Malloc$$
+move t142,$v0
+move t167,t142
+move t162,t167
+li t140,5
+li t168,4
+move $a0,t168
+jal $Malloc$$
+move t139,$v0
+la t169,L13
+sw t169,0(t139)
+move t141,t139
+bltz t140,L14
+L15:
+move $a0,t140
+move $a1,t141
+jal $InitArray$$
+move t161,$v0
+sw t161,(t162)
+sw t142,(t163)
+move t145,t143
+bltz t144,L16
+L17:
+move $a0,t144
+move $a1,t145
+jal $InitArray$$
+move t146,$v0
+move t147,t146
+li t148,0
+lw t170,(t147)
+ble t170,t148,L18
+L19:
+bltz t148,L20
+L21:
+li t173,4
+addi t174,t148,1
+mul t172,t173,t174
+add t171,t147,t172
+lw t149,(t171)
+la t175,L1
+beq t149,t175,L22
+L23:
+lw t150,0(t149)
+la t176,L1
+beq t150,t176,L24
+L25:
+lw t151,0(t150)
+li t152,1
+lw t177,(t151)
+ble t177,t152,L26
+L27:
+bltz t152,L28
+L29:
+li t180,4
+addi t181,t152,1
+mul t179,t180,t181
+add t178,t151,t179
+lw t153,(t178)
+la t182,L1
+beq t153,t182,L30
+L31:
+la t183,L32
+sw t183,0(t153)
+move t154,t146
+li t155,0
+lw t184,(t154)
+ble t184,t155,L33
+L34:
+bltz t155,L35
+L36:
+li t187,4
+addi t188,t155,1
+mul t186,t187,t188
+add t185,t154,t186
+lw t156,(t185)
+la t189,L1
+beq t156,t189,L37
+L38:
+lw t157,0(t156)
+la t190,L1
+beq t157,t190,L39
+L40:
+lw t158,0(t157)
+li t159,1
+lw t191,(t158)
+ble t191,t159,L41
+L42:
+bltz t159,L43
+L44:
+li t194,4
+addi t195,t159,1
+mul t193,t194,t195
+add t192,t158,t193
+lw t160,(t192)
+la t196,L1
+beq t160,t196,L45
+L46:
+lw $v0,0(t160)
+j L12
+L14:
+jal $SizeError$$
+j L12
+L16:
+jal $SizeError$$
+j L12
+L18:
+jal $UpperBoundExit$$
+j L12
+L20:
+jal $LowerBoundExit$$
+j L12
+L22:
+jal $NullExit$$
+j L12
+L24:
+jal $NullExit$$
+j L12
+L26:
+jal $UpperBoundExit$$
+j L12
+L28:
+jal $LowerBoundExit$$
+j L12
+L30:
+jal $NullExit$$
+j L12
+L33:
+jal $UpperBoundExit$$
+j L12
+L35:
+jal $LowerBoundExit$$
+j L12
+L37:
+jal $NullExit$$
+j L12
+L39:
+jal $NullExit$$
+j L12
+L41:
+jal $UpperBoundExit$$
+j L12
+L43:
+jal $LowerBoundExit$$
+j L12
+L45:
+jal $NullExit$$
+j L12
+L12:
+

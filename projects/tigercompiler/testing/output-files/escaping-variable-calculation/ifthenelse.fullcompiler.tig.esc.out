@@ -1,0 +1,30 @@
+LetExp([
+ VarDec(a,false,NONE,
+  IntExp(12)),
+ VarDec(b,false,NONE,
+  IntExp(19)),
+ VarDec(result,false,NONE,
+  IfExp(
+   OpExp(GtOp,
+    IntExp(10),
+    IntExp(20)),
+   StringExp("10 > 20
+"),
+   StringExp("10 <= 20
+")))],
+ SeqExp[
+  CallExp(print,[
+   VarExp(
+    SimpleVar(result))]),
+  IfExp(
+   OpExp(LtOp,
+    VarExp(
+     SimpleVar(a)),
+    VarExp(
+     SimpleVar(b))),
+   CallExp(print,[
+    StringExp("a < b
+")]),
+   CallExp(print,[
+    StringExp("a >= b
+")]))])

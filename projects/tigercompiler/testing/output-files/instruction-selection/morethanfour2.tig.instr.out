@@ -1,0 +1,33 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L13
+L15:
+add t142,t139,t141
+move $v0,t142
+j L14
+L14:
+
+LABEL $Main$$
+L16:
+li t143,1
+li t144,2
+li t145,3
+li t146,4
+li t147,5
+li t148,6
+move $a0,$fp
+move $a1,t143
+move $a2,t144
+move $a3,t145
+sw t146,-12($sp)
+sw t147,-8($sp)
+sw t148,-4($sp)
+jal L13
+move $v0,$v0
+j L12
+L12:
+

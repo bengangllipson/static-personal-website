@@ -1,0 +1,82 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L13
+Nobody"
+
+LABEL L16
+
+"
+
+LABEL L19
+Somebody"
+
+LABEL L22
+
+"
+
+LABEL $Main$$
+L23:
+li t146,8
+move $a0,t146
+jal $Malloc$$
+move t139,$v0
+la t147,L13
+sw t147,0(t139)
+li t148,1000
+sw t148,4(t139)
+move t140,t139
+lw t144,0($fp)
+move t141,t140
+la t149,L1
+beq t141,t149,L14
+L15:
+addi t151,t141,0
+lw t150,(t151)
+move $a0,t144
+move $a1,t150
+jal $Print$$
+addi t153,$fp,0
+lw t152,(t153)
+la t154,L16
+move $a0,t152
+move $a1,t154
+jal $Print$$
+move t142,t140
+la t155,L1
+beq t142,t155,L17
+L18:
+la t156,L19
+sw t156,0(t142)
+lw t145,0($fp)
+move t143,t140
+la t157,L1
+beq t143,t157,L20
+L21:
+addi t159,t143,0
+lw t158,(t159)
+move $a0,t145
+move $a1,t158
+jal $Print$$
+addi t161,$fp,0
+lw t160,(t161)
+la t162,L22
+move $a0,t160
+move $a1,t162
+jal $Print$$
+move $v0,$v0
+j L12
+L14:
+jal $NullExit$$
+j L12
+L17:
+jal $NullExit$$
+j L12
+L20:
+jal $NullExit$$
+j L12
+L12:
+

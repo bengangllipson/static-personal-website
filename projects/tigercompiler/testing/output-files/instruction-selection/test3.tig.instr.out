@@ -1,0 +1,36 @@
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL L13
+Nobody"
+
+LABEL L16
+Somebody"
+
+LABEL $Main$$
+L17:
+li t142,8
+move $a0,t142
+jal $Malloc$$
+move t139,$v0
+la t143,L13
+sw t143,0(t139)
+li t144,1000
+sw t144,4(t139)
+move t140,t139
+move t141,t140
+la t145,L1
+beq t141,t145,L14
+L15:
+la t146,L16
+sw t146,0(t141)
+move $v0,t140
+j L12
+L14:
+jal $NullExit$$
+j L12
+L12:
+

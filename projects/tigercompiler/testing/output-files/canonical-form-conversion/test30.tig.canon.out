@@ -1,0 +1,79 @@
+The fragments generated from the program: 
+
+LABEL L0
+ "
+
+LABEL L1
+ "
+
+LABEL $Main$$
+[
+LABEL L19,
+MOVE(
+ TEMP t139,
+ CONST 10),
+MOVE(
+ TEMP t140,
+ CONST 0),
+CJUMP(LT,
+ TEMP t139,
+ CONST 0,
+ L13,L14),
+LABEL L14,
+MOVE(
+ TEMP t141,
+ CALL(
+  NAME $InitArray$$,
+   TEMP t139,
+   TEMP t140)),
+MOVE(
+ TEMP t142,
+ TEMP t141),
+MOVE(
+ TEMP t143,
+ CONST 2),
+CJUMP(LE,
+ MEM(
+  TEMP t142),
+ TEMP t143,
+ L15,L16),
+LABEL L16,
+CJUMP(LT,
+ TEMP t143,
+ CONST 0,
+ L17,L18),
+LABEL L18,
+MOVE(
+ TEMP t123,
+ MEM(
+  BINOP(PLUS,
+   TEMP t142,
+   BINOP(MUL,
+    CONST 4,
+    BINOP(PLUS,
+     CONST 1,
+     TEMP t143))))),
+JUMP(
+ NAME L12),
+LABEL L13,
+EXP(
+ CALL(
+  NAME $SizeError$$)),
+JUMP(
+ NAME L12),
+LABEL L15,
+EXP(
+ CALL(
+  NAME $UpperBoundExit$$)),
+JUMP(
+ NAME L12),
+LABEL L17,
+EXP(
+ CALL(
+  NAME $LowerBoundExit$$)),
+JUMP(
+ NAME L12),
+LABEL L12 
+]
+
+
