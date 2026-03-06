@@ -1,7 +1,101 @@
 <h1>AI Composer</h1>
-<p>Written in Scala for the artificial intelligence class in my master's degree program at the University of
-    Minnesota, Twin Cities.
+<p>
+    Written in Scala for the artificial intelligence class in my master's degree program at the University of
+    Minnesota, Twin Cities.This project explores the potential for generating music using artificial intelligence. It
+    generates notes via the
+    musical technique of counterpoint to facilitate harmonically cohesive melodies. Two methods are exposed, one for
+    generating a cantus firmus line and one for generating a first species for a given cantus firmus. Both methods
+    adhere
+    to a set of rules which dictate which notes can be chosen when.
+</p>
+<a href="https://maven-badges.sml.io/sonatype-central/com.bengangllipson/ai-composer_3/" target="_blank">Latest
+    Release</a>
+<p><a href="https://github.com/bengangllipson/ai-composer" target="_blank">Source Code</a></p>
 
-<h3>Research Paper</h3>
-<p>The project includes a research paper discussing my implementations.</p>
+
+<h2>Installation</h2>
+<h3>maven</h3>
+<pre>
+    <code>
+&lt;dependency&gt;
+    &lt;groupId&gt;com.bengangllipson&lt;/groupId&gt;
+    &lt;artifactId&gt;ai-composer_3&lt;/artifactId&gt;
+    &lt;version&gt;3.0.0&lt;/version&gt;
+&lt;/dependency&gt;
+    </code>
+</pre>
+
+<h3>gradle</h3>
+<code>
+    implementation("com.bengangllipson:ai-composer_3:3.0.0")
+</code>
+
+<h3>sbt</h3>
+<code>
+    libraryDependencies += "com.bengangllipson" % "ai-composer_3" % "3.0.0"
+</code>
+
+<h2>Usage</h2>
+<pre>
+<code>
+import com.bengangllipson.aicomposer.api.AiComposer;
+
+void main() {
+    AiComposer aiComposer = new AiComposer();
+    List &lt;String&gt; cantusFirmus = aiComposer.generateCantusFirmus();
+    List &lt;String&gt; firstSpecies = aiComposer.generateFirstSpecies(cantusFirmus);
+}
+</code></pre>
+
+<h2>Dependencies</h2>
+<ul>
+    <li>
+        <a href="https://www.scala-lang.org/download/all.html">Scala v3.8.2</a>
+    </li>
+    <li>
+        <a href="https://www.oracle.com/java/technologies/downloads/">JDK 17+</a>
+    </li>
+    <li>
+        <a href="https://www.scala-sbt.org/download/">sbt</a>
+    </li>
+</ul>
+
+<h2>Cantus Firmus Rules</h2>
+<ul>
+    <li>Length must be 8-16 notes.</li>
+    <li>First and last note must be the tonic.</li>
+    <li>Final note must be approached by either a step above or a half step below.</li>
+    <li>The leading tone must always progress to the tonic.</li>
+    <li>All notes must be in the correct key.</li>
+    <li>All note-to-note progressions must be melodic consonances.</li>
+    <li>No note may be followed by the same note.</li>
+    <li>The total range (interval between lowest and highest notes) must be no more than a tenth.</li>
+    <li>There must be no more than 2 melodic motions larger a 4th or larger.</li>
+    <li>Any large leaps (a 4th or larger) must be followed by stepwise motion in the opposite direction.</li>
+    <li>There must be a single climax (high point) that appears only once in the line.</li>
+    <li>Motives or licks must not be repeated.</li>
+</ul>
+
+<h2>First Species Rules</h2>
+<ul>
+    <li>Must be the same length as the cantus firmus.</li>
+    <li>The first note must be either the tonic or the dominant.</li>
+    <li>The last note must be the tonic.</li>
+    <li>All notes must be in the correct key.</li>
+    <li>All note-to-note progressions must be melodic consonances.</li>
+    <li>There must be no leaps greater than an 8th.</li>
+    <li>All vertical intervals between the cantus firmus and first species must be harmonic consonances.</li>
+    <li>No note may be followed by the same note.</li>
+    <li>The leading tone must always lead to the tonic.</li>
+    <li>Any large leaps (a 4th or larger) must be followed by stepwise motion in the opposite direction.</li>
+    <li>There must be no more than 2 leaps in a row.</li>
+    <li>Consecutive leaps must not go in the same direction.</li>
+    <li>There must be a single climax (high point) that appears only once in the line.</li>
+    <li>Motives or licks must not be repeated.</li>
+    <li>The line must not contain the same note more than 4 times.</li>
+    <li>There must be no parallel 5ths.</li>
+</ul>
+
+<h2>Research Paper</h2>
+<p>The project includes a research paper discussing my implementation.</p>
 <p><a href="/projects/ai-composer/research-paper">research-paper/</a></p>
