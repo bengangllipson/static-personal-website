@@ -1,0 +1,64 @@
+<h1>JOOQ Flyway Sandbox</h1>
+<p>
+    Written in Kotlin. A sample application demonstrating how to use JOOQ and Flyway to facilitate type-safe, immutable
+    database management and interaction. This repository serves as a minimal, reproducible sandbox for understanding how
+    these tools work together.
+</p>
+
+<p><a href="https://github.com/bengangllipson/jooq-flyway-sandbox" target="_blank">Source Code</a></p>
+
+<h2>Features</h2>
+<ul>
+    <li>
+        Connects to PostgreSQL via config
+    </li>
+    <li>
+        Migrates the schema in a series of immutable steps
+    </li>
+    <li>
+        Generates a set of Java classes to model the database objects and metadata
+    </li>
+    <li>
+        Creates and runs a local instance of PostgreSQL via Docker Compose
+    </li>
+</ul>
+
+<h2>Usage</h2>
+<h3>Building</h3>
+<p>
+    Automatically starts docker compose, spins up a local PostgreSQL database, migrates the schema, and generates the
+    JOOQ classes.
+</p>
+<pre><code>./gradlew build</code></pre>
+
+<h3>Running</h3>
+<p>
+    Automatically starts docker compose, spins up a local PostgreSQL database, migrates the schema, and generates the
+    JOOQ classes.
+</p>
+<pre><code>./gradlew run</code></pre>
+
+<h3>Starting the Local Database</h3>
+<p>
+    Starts the local instance of PostgreSQL in isolation.
+</p>
+<pre><code>./gradlew composeUp</code></pre>
+
+<h3>Starting the Local Database</h3>
+<pre><code>./gradlew composeDown</code></pre>
+
+<h3>Stopping the Local Database</h3>
+<pre><code>./gradlew composeDown</code></pre>
+
+<h3>Migrating the Database Schema</h3>
+<p>
+    Automatically starts docker compose, and spins up a local PostgreSQL database. Migrates the schema in isolation.
+</p>
+<pre><code>./gradlew flywayMigrate</code></pre>
+
+<h3>Generating the JOOQ Classes</h3>
+<p>
+    Automatically starts docker compose, spins up a local PostgreSQL database, and migrates the schema. Generates the
+    JOOQ classes in isolation.
+</p>
+<pre><code>./gradlew generateJooq</code></pre>
