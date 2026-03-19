@@ -1,0 +1,54 @@
+<style>
+    /* normal page state */
+    #cave-canvas {
+        display: none;
+    }
+
+    #fps {
+        display: none;
+    }
+
+    /* fullscreen cave state */
+    body.cave-mode {
+        margin: 0;
+        overflow: hidden;
+    }
+
+    body.cave-mode #enter-cave {
+        display: none;
+    }
+
+    body.cave-mode #cave-canvas {
+        display: block;
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    body.cave-mode #fps {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        color: white;
+        font-size: 20px;
+        margin: 0;
+        pointer-events: none;
+        z-index: 11;
+    }
+</style>
+<div id="enter-cave">
+    <h1>The Cave</h1>
+    <p>Written in JavaScript. A 3D graphics program built to learn how to make a realistic fire simulation via textures
+        alone without the use of particles. Enter at your own risk, for those who shackle themselves may never be set free.</p>
+    <button onclick="enter()">Enter</button>
+</div>
+<div>
+    <canvas id="cave-canvas"></canvas>
+    <p id="fps" style="position: absolute; top: 10px; left: 10px; color: white; font-size: 20px; margin: 0; pointer-events: none;"></p>
+</div>
+<script src="https://webgl2fundamentals.org/webgl/resources/twgl-full.min.js"></script>
+<script src="/projects/cave/obj.js"></script>
+<script src="/projects/cave/matrix.js"></script>
+<script src="/projects/cave/cave.js"></script>
